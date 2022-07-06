@@ -1,0 +1,89 @@
+#form-contatti{
+    margin: 50px 0px;
+    .cont_top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            margin-bottom: 0px;
+        }
+        
+        h3{
+            margin-top: 10px;
+        }
+    }
+
+    .cont_form{
+        width: 100%;
+
+        .row1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .row1_content{
+                width: 47%;
+                padding: 10px;
+                border-radius: 0;
+                border: 1px solid black;
+
+                @media(max-width: 950px){
+                    width: 45%;
+                }
+                @media(max-width: 500px){
+                    width: 40%;
+                }
+
+                @media(min-width: 1400px){
+                    width: 48%;
+                    height: 3vh;
+                }
+            }
+        }
+
+        .row2{
+            display: flex;
+
+            .row2_content{
+                width: 100%;
+                padding: 10px;
+                border-radius: 0;
+                border: 1px solid black;
+
+                @media(min-width: 1400px){
+                    input{
+                        height: vh;
+                    }
+                    textarea{
+                        height: 5vh;
+                    }
+                }
+            }
+        }
+
+        .row3{
+            display: flex;
+            justify-content: center;
+
+            .form_btn{
+                border: 1px solid black;
+                background-color: transparent;
+                margin-right:15px;
+                padding: 5px 20px;
+                font-size: medium;
+            }
+            
+            .form_btn:hover{
+                background-color: rgb(255, 255, 255);
+                color: #28669f;
+                border: 2px solid #28669f;
+                margin: -1px;
+                text-shadow: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    border-top: 1px solid #888888;
+    margin-top: 20px;
+    padding: 10px 0px;
+    background-color: rgb(246, 246, 246);
+    justify-content: space-evenly;
+
+    ul {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    li {
+        list-style: none;
+        padding: 5px 0px;
+        color: #888888;
+        font-size: small;
+
+        a {
+            color: #888888;
+        }
+    }
+
+    @media(max-width:500px) {
+        flex-direction: column;
+
+        .cerca {
+            display: none;
+        }
+    }
+}
