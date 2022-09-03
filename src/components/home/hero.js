@@ -1,31 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Style from './homeStyle.scss';
+import './homeStyle.scss';
 
 export default function Hero() {
 
-
+    const [classe, setClasse] = useState("bg_img1");
+    const [counter, setCounter] = useState(0);
     const bg_img = ["bg_img1", "bg_img2", "bg_img3"]
-    var i = 0;
-
-    setInterval(avanti, 10000);
 
     function avanti() {
-        if (i === bg_img.length) {
-            i = 0;
-            document.getElementById("hero").classList.replace(bg_img[2], bg_img[i]);
-        } if (i === bg_img.length - 1) {
-            document.getElementById("hero").classList.replace(bg_img[i], bg_img[0]);
-        }
-        document.getElementById("hero").classList.replace(bg_img[i], bg_img[i + 1]);
-        i++;
-
-    }
+        setCounter(counter + 1);
+        if (counter === bg_img.length -1) {
+            setCounter(0);
+        } 
+        setClasse(bg_img[counter]);
+    };
+    
+    const interval = setInterval(avanti, 10000);
 
     return (
-        <section id="hero" className="bg_img1">
+        <section id="hero" className={classe}>
             <div className="hero_text">
-                <h2 className="text-shadow">Tutti i servizi Real Estate dedicati a:</h2>
+                <h2 className="text-shadow">Tutti i servizi immobiliari dedicati a:</h2>
                 <div className="btns">
                     <Link to={"/servizi/utilizzatori"} className="hero_btn">Utilizzatori</Link>
                     <Link to={"/servizi/proprietari"} className="hero_btn">Proprietari</Link>
