@@ -5,22 +5,27 @@ import Body from '../components/servizi/body-servizi'
 
 function Investirori() {
 
-    const [servizi, setServizi] = useState([Object, Object, Object]);
+    const [servizi, setServizi] = useState();
 
     useEffect(() => {
-        fetch("http://localhost:3000/servizi")
+        fetch(process.env.REACT_APP_API_BASE_URL + "/servizi")
             .then((res) => res.json())
             .then((res) => setServizi(res))
     }, []);
-    console.log(servizi)
-
-    return (
-        <>
-            <Navbar />
-            <Body counter={1} servizi={servizi} />
-            <Footer />
-        </>
-    )
+    
+    if (servizi) {
+        return (
+            <>
+                <Navbar />
+                <Body counter={1} servizi={servizi} />
+                <Footer />
+            </>
+        )
+    } else {
+        return (
+            <h1>LOADING</h1>
+        )
+    }
 }
 
 export default Investirori;
