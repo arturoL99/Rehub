@@ -6,6 +6,7 @@ import './navStyle.scss';
 export default function Navbar() {
 
     const [isOpen, setOpen] = useState(false);
+    const [drop, setDrop] = useState(false);
 
     const handleOpen = () => {
         setOpen(!isOpen);
@@ -25,17 +26,18 @@ export default function Navbar() {
             </div>
             <div className={isOpen ? "nav_open" : "nav"}>
                 <Link to={"/"} className="mx-15 py-20">Home</Link>
-                <Link to={"/servizi/utilizzatori"} className="mx-15 py-20">Servizi</Link>
-                {/* <div className='dropdown_content'>
-                    <Link to={"/servizi"} className="mx-15 py-20">Servizi</Link>
-                    <Link to={"/servizi"} className="mx-15 py-20">Servizi</Link>
-                    <Link to={"/servizi"} className="mx-15 py-20">Servizi</Link>
-                </div> */}
+                <div className="dropdown-container" onMouseEnter={() => setDrop(true)}
+                    onMouseLeave={() => setDrop(false)}>
+                    <Link to={""} className="mx-15 py-20 hideMobile">Servizi</Link>
+                    <div className={drop ? 'dropdown_content' : "hideDesktop"}>
+                        <Link to={"/servizi/utilizzatori"} className="mx-15 py-20">Utilizzatori</Link>
+                        <Link to={"/servizi/proprietari"} className="mx-15 py-20">Proprietari</Link>
+                        <Link to={"/servizi/investitori"} className="mx-15 py-20">Investitori</Link>
+                    </div>
+                </div>
                 <Link to={"/proprieta"} className="mx-15 py-20">Cerca una proprietà</Link>
                 <Link to={"/blog"} className="mx-15 py-20">Blog</Link>
-                <a href="#" className="mx-15 py-20">Contatti</a>
-                <Link to={"/join"} className="mx-15 py-20">Join us</Link>
-                <a href="#" className="mx-15 py-20">IT</a>
+                <Link to={"/join"} className="mx-15 py-20">Contatti</Link>
             </div>
         </header>
     )
