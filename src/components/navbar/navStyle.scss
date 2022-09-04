@@ -86,6 +86,11 @@ header {
       }
     }
   }
+  a{
+    @media(max-width: 950px){
+      border-bottom: 1px solid #888888;
+    }
+  }
 }
 
 .dropdown-container {

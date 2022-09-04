@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
-import logo from '../../images/logoReHub.png'
+import { Link } from 'react-router-dom';
+import logo from '../../images/logoReHub.png';
+import x from "../../images/x-full.svg";
 import './navStyle.scss';
 
 export default function Navbar() {
@@ -20,8 +21,8 @@ export default function Navbar() {
                     <p className="mx-15 logo-title py-10">Re-Hub <br />Real Estate <br />Advisory & Agency</p>
                 </div>
                 <div className='menu'>
-                    <img src="https://img.icons8.com/ios/50/000000/menu--v1.png" alt='menu button'
-                        onClick={handleOpen} />
+                    <img src={isOpen ? x : "https://img.icons8.com/ios/50/000000/menu--v1.png"}
+                        alt='menu button' onClick={handleOpen} />
                 </div>
             </div>
             <div className={isOpen ? "nav_open" : "nav"}>
