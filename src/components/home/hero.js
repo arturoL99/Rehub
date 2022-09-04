@@ -14,8 +14,6 @@ export default function Hero() {
             setCounter(0);
         }
         setClasse(bgImg[counter]);
-        console.log(counter);
-        console.log(classe);
     };
 
     useEffect(() => {
