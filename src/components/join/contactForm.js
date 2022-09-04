@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { client } from "../../client/client";
-import Style from './joinStyle.scss';
+import './joinStyle.scss';
 
 function BodyJoin() {
 
