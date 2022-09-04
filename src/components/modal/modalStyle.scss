@@ -1,0 +1,60 @@
+.modalContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .modal{
+    width: 500px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba($color: #000000, $alpha: 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 25px;
+
+        .modalTitle{
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            .modalClose{
+            height: 30px;
+            width: 30px;
+            border: 2px solid red;
+            border-radius: 0;
+            background-color: transparent;
+            color: red;
+            margin: 0 25px;
+            cursor: pointer;
+            }
+
+            .modalClose:hover{
+                background-color: red;
+                color: white;
+                font-weight: bold;
+            }
+        }
+
+        .modalContent{
+            text-align: justify;
+            overflow: auto;
+        }
+
+        
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            margin: 10px;
+        }
+    }
+}

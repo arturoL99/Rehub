@@ -1,0 +1,147 @@
+body {
+    margin: 0 25px;
+    font-family: Ubuntu, sans-serif;
+    background-color: rgb(246, 246, 246);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+input:required:valid {
+    border: 1px solid green !important;
+}
+
+a:hover {
+    color: black;
+    border-bottom: 3px solid #28669f;
+    margin-bottom: -3px;
+    text-decoration: none;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.text-shadow {
+    text-shadow:
+        0.05em 0 rgba(0, 0, 0, 0.2),
+        0 0.05em rgba(0, 0, 0, 0.2),
+        -0.05em 0 rgba(0, 0, 0, 0.2),
+        0 -0.05em rgba(0, 0, 0, 0.2),
+        -0.05em -0.05em rgba(0, 0, 0, 0.2),
+        -0.05em 0.05em rgba(0, 0, 0, 0.2),
+        0.05em -0.05em rgba(0, 0, 0, 0.2),
+        0.05em 0.05em rgba(0, 0, 0, 0.2);
+}
+
+.mx-15 {
+    margin: 0px 15px;
+}
+
+.px-15 {
+    padding: 0px 15px;
+}
+
+.px-40 {
+    padding: 0px 40px;
+}
+
+.py-10 {
+    padding: 10px 0px;
+}
+
+.py-20 {
+    padding: 20px 0px;
+}
+
+.my-10 {
+    margin: 10px 0px;
+}
+
+.my-20 {
+    margin: 20px 0px;
+}
+
+.bg_img1 {
+    background-image: url(../images/bgImg1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+}
+
+.bg_img2 {
+    background-image: url(../images/bgImg2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+}
+
+.bg_img3 {
+    background-image: url(../images/bgImg3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+}
+
+.bg_card1 {
+    background-image:linear-gradient(0deg, rgb(2, 0, 36) -100%, rgb(9, 9, 9) 3%, rgba(255, 255, 255, 0.2637429972) 82%), 
+    url('./boscoCitta.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.bg_card2 {
+    background-image:linear-gradient(0deg, rgb(2, 0, 36) -100%, rgb(9, 9, 9) 3%, rgba(255, 255, 255, 0.2637429972) 82%), 
+    url('./cityLife.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.bg_card3 {
+    background-image:linear-gradient(0deg, rgb(2, 0, 36) -100%, rgb(9, 9, 9) 3%, rgba(255, 255, 255, 0.2637429972) 82%), 
+    url('./martini.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.bg_card4 {
+    background-image:linear-gradient(0deg, rgb(2, 0, 36) -100%, rgb(9, 9, 9) 3%, rgba(255, 255, 255, 0.2637429972) 82%), 
+    url('./palazzo1.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.bg_card5 {
+    background-image:linear-gradient(0deg, rgb(2, 0, 36) -100%, rgb(9, 9, 9) 3%, rgba(255, 255, 255, 0.2637429972) 82%), 
+    url('./interno1.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img_fluid {
+    /*DA MODIFICARE, Specificare max-width nei singoli elementi + modificarla con media*/
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    z-index: -1;
+
+    @media(min-width: 1400px){
+            max-width: 900px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #28669f;
+}
