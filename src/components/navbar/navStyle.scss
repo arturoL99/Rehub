@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    border-bottom: 1px solid #888888;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .container {
+        display: flex;
+        .logo-title{
+            font-weight: 700;
+        }
+    }
+
+    .nav {
+        display: flex;
+
+        .dropdown_content{
+            position:relative;
+            border: 1px solid dark;
+            
+        }
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    @media(max-width: 950px) {
+        .nav {
+            display: none;
+        }
+
+        .nav_open {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu {
+            display: flex;
+        }
+    }
+}

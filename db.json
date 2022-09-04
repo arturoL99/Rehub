@@ -1,0 +1,171 @@
+{
+  "messaggi": [
+    {
+      "nome": "pippo",
+      "cognome": "baudo",
+      "mail": "adada@gmail.com",
+      "messaggio": "ciaooooo frfjbrfbbbvhbvhrbvbjbvjfbvjkbvjebvjevjvjerbvj",
+      "id": 1
+    },
+    {
+      "nome": "paolo",
+      "cognome": "bianchi",
+      "mail": "arturoleone01@gmail.com",
+      "messaggio": "fmrjeuirqghuhu rhqughqurhquhgh ruhu hruqghruhq hg8q hrq8ghr8",
+      "id": 2
+    },
+    {
+      "nome": "fverv",
+      "cognome": "ververr",
+      "mail": "verve",
+      "messaggio": "ververvre",
+      "id": 3
+    },
+    {
+      "nome": "ewdw",
+      "cognome": "dedede",
+      "mail": "afefwe",
+      "messaggio": "effef34",
+      "id": 4
+    },
+    {
+      "nome": "gewwr",
+      "cognome": "gwgwrgr",
+      "mail": "dgergr",
+      "messaggio": "rgerghthtr",
+      "id": 5
+    },
+    {
+      "nome": "gewwr",
+      "cognome": "gwgwrgr",
+      "mail": "dgergr@rwgrgr",
+      "messaggio": "rgerghthtr",
+      "id": 6
+    },
+    {
+      "nome": "paolo",
+      "cognome": "bianchi",
+      "mail": "adsasdsa@dewefw",
+      "messaggio": "xfstrst",
+      "id": 7
+    }
+  ],
+  "servizi": [
+    {
+      "titolo": "Utilizzatori",
+      "sottotitolo": "We design the best solutions",
+      "contenuto": "Sia per le aziende che per le famiglie, i costi immobiliari rappresentano una voce importante del bilancio, per questo motivo le scelte relative al “mattone” sono di fondamentale importanza per assicurare il miglior risparmio e nello stesso tempo per esser coerenti con i propri bisogni ed esigenze. Affianchiamo gli utilizzatori privati e professionali nella ricerca dell’immobile più adatto, sia esso un’abitazione, un ufficio, negozio, spazio logistico-industriale, o terreno edificabile. Forniamo un supporto in ogni fase del processo negoziale, mettendo a fuoco tutti gli aspetti da prendere in considerazione, valutando rischi e opportunità di ogni soluzione, puntando sempre al miglior risultato nell’interesse del nostro Cliente. Impegno, serietà e competenza sono i nostri elementi distintivi, sia per la compravendita che per la locazione.",
+      "titolo2": "Principali servizi:",
+      "lista": [
+        "analizziamo approfonditamente le varie piazze immobiliari oggetto di interesse;",
+        "studiamo le singole location e raccogliamo evidenze sui valori e prezzi di mercato;",
+        "prendiamo in carico tutta la documentazione e gestiamo appuntamenti e visite;",
+        "aiutiamo privati e famiglie nell’individuazione dell’abitazione desiderata o del terreno edificabile ove realizzarla;",
+        "supportiamo le aziende nella ricerca di nuove sedi e/o ampliamento di quelle esistenti;",
+        "verifichiamo contratti di locazione residenziali e commerciali;",
+        "diamo assistenza nella rinegoziazione dei contratti in scadenza;",
+        "ci occupiamo della revisione dei canoni per ottenere le migliori condizioni possibili;"
+      ],
+      "id": 1
+    },
+    {
+      "titolo": "Investitori",
+      "sottotitolo": "We deliver results for your investments",
+      "contenuto": "Ci proponiamo quale partner affidabile e professionale per assistere privati ed aziende interessate ad investire nel settore immobiliare, con un particolare focus su Milano, Lago Maggiore e mercato delle aste immobiliari. Siamo particolarmente attivi nelle operazioni di investimento e disinvestimento di asset residenziali, uffici, residenze per anziani, logistica/industriale e ci occupiamo con crescente frequenza anche di settori innovativi, già consolidati nel mercato internazionale ma ancora poco sviluppati in Italia, quali il co-living ed il “senior living. Tra i nostri caratteri distintivi ci viene riconosciuta la cura e l’attenzione riservata alle esigenze di tutti i nostri clienti. Rispondiamo alle loro necessità con un supporto professionale innovativo ed esclusivo, in grado di fornire risposte su misura.",
+      "titolo2": "Principali servizi:",
+      "lista": [
+        "studiamo i mercati di riferimento;",
+        "offriamo servizi di valutazione;",
+        "forniamo due diligence tecnica e commerciale;",
+        "ricerchiamo opportunità di investimento;",
+        "assistiamo tutte le fasi e gli aspetti della trattativa e supportiamo la definizione contrattuale;"
+      ],
+      "id": 2
+    },
+    {
+      "titolo": "Proprietari",
+      "sottotitolo": "We add more value",
+      "contenuto": "Indipendentemente dalla dimensione e dalla natura, privata o aziendale, tutti i proprietari immobiliari sono accomunati dalla medesima legittima attesa, quella di valorizzare al meglio i propri beni. I nostri servizi sono orientati ad ottenere esattamente questo risultato, facendo leva su tutte le potenzialità degli immobili in relazione al proprio “micro-mercato” di riferimento, adottando le più avanzate tecniche di promozione, a partire dalle nuove soluzioni web marketing, che hanno il vantaggio della massima resa al minimo costo. Presidiamo l’intero processo di commercializzazione, offrendo servizi di intermediazione per attività di vendita, acquisto, locazione di immobili residenziali, direzionali, commerciali, logistico-industriali e terreni edificabili su tutto il territorio nazionale. I nostri servizi spaziano dall’analisi preventiva dell&#39;area, del mercato e della concorrenza, alla condivisione della strategia di marketing e di prezzo (per velocizzare e migliorare i processi di valorizzazione degli asset), fino alla commercializzazione e vendita delle iniziative immobiliari.",
+      "titolo2": "Principali servizi:",
+      "lista": [
+        "svolgiamo attività di intermediazione per vendite/acquisizioni/locazioni di singoli appartamenti/unità, immobili cielo terra o portafogli immobiliari;",
+        "analizziamo il mercato e il posizionamento dell’immobile al fine di individuare il prezzo ovvero il canone di mercato;",
+        "assistiamo tutte le fasi e gli aspetti della trattativa e supportiamo la definizione contrattuale (preliminari, rogiti notarili, contratti di locazione);",
+        "individuiamo la migliore soluzione finanziaria;",
+        "elaboriamo strategie di commercializzazione e marketing;",
+        "forniamo assistenza nell’individuzione di terreni edificabili e nella definizione di progetti di sviluppo immobiliare, offrendo servizi su misura, dalla fase iniziale fino al post-vendita;"
+      ],
+      "id": 3
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "Article Title 1",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, corporis assumenda asperiores quis error voluptatem veniam faccere aliquam porro alias doloribus blanditis reprehenderit preferendis repellendus unde, consequator illum qui corrupti. ",
+      "img": "https://placeimg.com/768/480/arch?1",
+      "tag": "tech",
+      "paragrafo1": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+      "paragrafo2": "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. n of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free f"
+    },
+    {
+      "id": 2,
+      "title": "Article Title 2",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, corporis assumenda asperiores quis error voluptatem veniam faccere aliquam porro alias doloribus blanditis reprehenderit preferendis repellendus unde, consequator illum qui corrupti. ",
+      "img": "https://placeimg.com/768/480/arch?2",
+      "tag": "tech",
+      "paragrafo1": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+      "paragrafo2": "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. n of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free f"
+    },
+    {
+      "id": 3,
+      "title": "Article Title 3",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, corporis assumenda asperiores quis error voluptatem veniam faccere aliquam porro alias doloribus blanditis reprehenderit preferendis repellendus unde, consequator illum qui corrupti. ",
+      "img": "https://placeimg.com/768/480/arch?3",
+      "tag": "tech",
+      "paragrafo1": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+      "paragrafo2": "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. n of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free f"
+    },
+    {
+      "id": 4,
+      "title": "Article Title 4",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, corporis assumenda asperiores quis error voluptatem veniam faccere aliquam porro alias doloribus blanditis reprehenderit preferendis repellendus unde, consequator illum qui corrupti. ",
+      "img": "https://placeimg.com/768/480/arch?4",
+      "tag": "tech",
+      "paragrafo1": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+      "paragrafo2": ""
+    }
+  ],
+  "annunci": [
+    {
+      "id": 1,
+      "title": "Bosco verticale",
+      "indirizzo": "Via Gaetano de Castillia 11, 20124 Milano MI",
+      "metri": "154 m²"
+    },
+    {
+      "id": 2,
+      "title": "City Life",
+      "indirizzo": "Via Ambrogio Spinola 7, 20149 Milano MI",
+      "metri": "140 m²"
+    },
+    {
+      "id": 3,
+      "title": "Palazzo Martini",
+      "indirizzo": "Piazza Armando Diaz 5, 20122 Milano MI",
+      "metri": "120 m²"
+    },
+    {
+      "id": 4,
+      "title": "Lorem Impsum",
+      "indirizzo": "Via Mosè Bianchi 72, 20149 Milano MI",
+      "metri": "254 m²"
+    },
+    {
+      "id": 5,
+      "title": "Amendola fiera",
+      "indirizzo": "Via Monte Rosa 55, 20149 Milano MI",
+      "metri": "57 m²"
+    }
+  ]
+}

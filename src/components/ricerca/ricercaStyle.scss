@@ -1,0 +1,40 @@
+#ricerca {
+    display: flex;
+    width: 50vw;
+    margin-bottom: 5px;
+
+    form {
+        display: flex;
+        justify-content: center;
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            border: 1px solid #888888;
+            width: 14vw;
+            height: 5vh;
+
+            select{
+                height:5vh;
+                width: 14vw;
+                background-color: transparent;
+                font-size: large;
+                cursor: pointer;
+                border: none;
+            }
+        }
+
+        button {
+            width: 7vw;
+            border: 1px solid #888888;
+            color: white;
+            background-color: #28669f;
+        }
+
+        button:hover{
+            background-color: #1d4971;
+            cursor: pointer;
+        }
+    }
+
+}
