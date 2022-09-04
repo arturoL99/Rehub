@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './homeStyle.scss';
+import bgImg from "../../images/bgImg4.jpg"
 
 export default function Hero() {
 
@@ -20,6 +21,7 @@ export default function Hero() {
 
     return (
         <section id="hero" className={classe}>
+            {/* <img src={bgImg} className="abso" /> */}
             <div className="hero_text">
                 <h2 className="text-shadow">Tutti i servizi immobiliari dedicati a:</h2>
                 <div className="btns">
