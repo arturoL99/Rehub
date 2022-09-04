@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import './annunciStyle.scss';
 import Annuncio from "./annuncio";
+import { client } from "../../client/client";
 
 function Annunci(props) {
 
     const [annunci, setAnnunci] = useState(null);
 
     useEffect(() => {
-        fetch(process.env.REACT_APP_API_BASE_URL + "/articles")
-            .then((res) => res.json())
+        client.getAnnunci()
             .then((res) => setAnnunci(res))
     }, []);
 

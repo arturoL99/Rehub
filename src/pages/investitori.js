@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import Navbar from '../components/navbar/navbar'
 import Footer from '../components/footer/footer'
 import Body from '../components/servizi/body-servizi'
+import { client } from "../client/client";
 
 function Investirori() {
 
     const [servizi, setServizi] = useState();
 
     useEffect(() => {
-        fetch(process.env.REACT_APP_API_BASE_URL + "/servizi")
-            .then((res) => res.json())
+        client.getServizi()
             .then((res) => setServizi(res))
     }, []);
     
