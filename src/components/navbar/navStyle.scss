@@ -1,49 +1,89 @@
 header {
+  display: flex;
+  border-bottom: 1px solid #888888;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .container {
     display: flex;
-    border-bottom: 1px solid #888888;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-
-    .container {
-        display: flex;
-        .logo-title{
-            font-weight: 700;
-        }
+    .logo-title {
+      font-weight: 700;
+      font-size: 18px;
     }
+    .logoContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
 
+  .nav {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+
+    .dropdown_content {
+      position: relative;
+      border: 1px solid dark;
+    }
+  }
+
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  @media (max-width: 950px) {
     .nav {
-        display: flex;
-
-        .dropdown_content{
-            position:relative;
-            border: 1px solid dark;
-            
-        }
+      display: none;
     }
 
-    .logo {
-        height: 60px;
-        width: 60px;
+    .nav_open {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+      font-size: 20px;
+      font-weight: 550;
+      margin: 15px 0;
+      
+      a{
+        margin: 0 25px;
+      }
     }
 
     .menu {
-        display: none;
+      display: flex;
     }
+  }
 
-    @media(max-width: 950px) {
-        .nav {
-            display: none;
+  @media (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .logoContainer{
+            display: flex;
         }
 
-        .nav_open {
+        .menu{
             display: flex;
-            flex-direction: column;
-        }
-
-        .menu {
-            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 35px;
+                width: 35px;
+            }
         }
     }
+  }
 }
