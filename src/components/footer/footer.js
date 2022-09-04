@@ -1,6 +1,6 @@
 import React from "react";
-import Style from './footStyle.scss'
-import Logo from '../../style/logoReHub.png'
+import './footStyle.scss'
+import Logo from '../../images/logoReHub.png'
 
 export default function footer(){
     return(
@@ -12,7 +12,7 @@ export default function footer(){
             <li><a href="#">Contatti</a></li>
         </ul>
         <ul>
-            <li><img src={Logo} alt="rehub logo"/></li>
+            <li><img src={Logo} className="footerLogo" alt="rehub logo"/></li>
         </ul>
         <ul className="cerca">
             <li>Cerca una proprietà :</li>

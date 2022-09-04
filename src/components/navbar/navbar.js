@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
-import logo from '../../style/logoReHub.png'
-import Style from './navStyle.scss';
+import logo from '../../images/logoReHub.png'
+import './navStyle.scss';
 
 export default function Navbar() {
 
