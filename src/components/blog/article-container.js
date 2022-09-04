@@ -6,7 +6,7 @@ export default function ArticleContainer() {
     const [art, setArt]= useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:3000/articles")
+        fetch(process.env.REACT_APP_API_BASE_URL + "/articles")
             .then((res) => res.json())
             .then((res) => setArt(res))         
     }, []);

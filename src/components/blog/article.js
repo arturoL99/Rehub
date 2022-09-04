@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import Style from './artStyle.scss'
-import Modal from '../modal/modal'
+import './artStyle.scss';
+import Modal from '../modal/modal';
 
 export default function Article(prop) {
 

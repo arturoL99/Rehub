@@ -6,7 +6,7 @@ import img2 from '../../style/servizi2.jpeg';
 
 function BodyServizi(props) {
 
-    const servizio = props.servizi.servizi.at(props.counter);
+    const servizio = props.servizi.at(props.counter);
     const lista_servizi = servizio.lista;
 
     return (
