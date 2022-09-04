@@ -12,10 +12,10 @@ header {
       font-weight: 700;
       font-size: 18px;
     }
-    .logoContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .logoContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -52,8 +52,8 @@ header {
       font-size: 20px;
       font-weight: 550;
       margin: 15px 0;
-      
-      a{
+
+      a {
         margin: 0 25px;
       }
     }
@@ -67,23 +67,60 @@ header {
     display: flex;
     flex-direction: column;
 
-    .container{
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .logoContainer {
         display: flex;
-        justify-content: space-between;
-        width: 100%;
-        .logoContainer{
-            display: flex;
-        }
+      }
 
-        .menu{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img{
-                height: 35px;
-                width: 35px;
-            }
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 35px;
+          width: 35px;
         }
+      }
     }
+  }
+}
+
+.dropdown-container {
+  position: relative;
+  height: 2vh;
+  margin-top: 20px;
+
+  @media(max-width: 950px){
+    position:static;
+    height: fit-content;
+    margin: 0;
+  }
+}
+.dropdown_content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  border: 1px solid #888888;
+  top: 10px;
+  z-index: 10;
+}
+
+.hideDesktop {
+  display: none;
+
+  @media (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hideMobile{
+  @media (max-width: 950px) {
+    display: none;
   }
 }

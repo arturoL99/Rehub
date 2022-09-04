@@ -63,27 +63,6 @@ a:hover {
     margin: 20px 0px;
 }
 
-.bg_img1 {
-    background-image: url(../images/bgImg1.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transition: background-image 1s ease-in-out;
-}
-
-.bg_img2 {
-    background-image: url(../images/bgImg2.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transition: background-image 1s ease-in-out;
-}
-
-.bg_img3 {
-    background-image: url(../images/bgImg3.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transition: background-image 1s ease-in-out;
-}
-
 .bg_card1 {
     background-image:linear-gradient(0deg, rgb(2, 0, 36) -100%, rgb(9, 9, 9) 3%, rgba(255, 255, 255, 0.2637429972) 82%), 
     url('../images/boscoCitta.webp');
