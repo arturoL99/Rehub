@@ -1,5 +1,5 @@
 import React from "react";
-import Style from './ricercaStyle.scss'
+import './ricercaStyle.scss';
 
 function Ricerca() {
     return (

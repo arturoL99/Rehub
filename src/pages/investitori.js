@@ -3,6 +3,7 @@ import Navbar from '../components/navbar/navbar'
 import Footer from '../components/footer/footer'
 import Body from '../components/servizi/body-servizi'
 import { client } from "../client/client";
+import Loading from "../components/loading/loading";
 
 function Investirori() {
 
@@ -23,7 +24,7 @@ function Investirori() {
         )
     } else {
         return (
-            <h1>LOADING</h1>
+            <Loading />
         )
     }
 }

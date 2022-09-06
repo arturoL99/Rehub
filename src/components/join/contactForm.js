@@ -15,7 +15,7 @@ function BodyJoin() {
             console.log(avviso);
             client.addMail(avviso).then((res) => console.log(res));
         } else {
-            console.log("campo vuoto")
+            console.log("campo vuoto");
         }
     };
 

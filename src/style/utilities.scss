@@ -1,6 +1,11 @@
+@font-face {
+    font-family: Imported;
+    src: url(./AvenirNextLTPro-Regular.otf);
+}
+
 body {
     margin: 0 25px;
-    font-family: Ubuntu, sans-serif;
+    font-family: Imported;
     background-color: rgb(246, 246, 246);
 }
 
@@ -123,4 +128,12 @@ a:hover {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: #28669f;
+}
+
+.centered{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
