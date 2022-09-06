@@ -1,5 +1,5 @@
 import React from "react";
-import Style from './testStyle.scss'
+import './testStyle.scss';
 
 function Test(){
     return(

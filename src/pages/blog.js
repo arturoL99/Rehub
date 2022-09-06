@@ -2,7 +2,7 @@ import React from "react";
 import ArticleContainer from "../components/blog/article-container";
 import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer/footer";    
-import Style from "../components/blog/artStyle.scss"
+import "../components/blog/artStyle.scss";
 
 function Blog(){
     return(

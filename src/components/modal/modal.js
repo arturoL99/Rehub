@@ -1,15 +1,15 @@
 import React from "react";
-import Style from './modalStyle.scss'
+import './modalStyle.scss';
 
-function Modal(props){
- console.log(props)
-    
-    return(
-        <div className="modalContainer">
+function Modal(props) {
+  console.log(props)
+
+  return (
+    <div className="modalContainer">
       <div className="modal">
         <div className="modalTitle px-15">
           <h2>{props.art.title}</h2>
-          <button className="modalClose" onClick={() => {props.setModal(false)}}>X</button>
+          <button className="modalClose" onClick={() => { props.setModal(false) }}>X</button>
         </div>
 
         <div className="modalContent px-15">
@@ -19,6 +19,6 @@ function Modal(props){
         </div>
       </div>
     </div>
-    )
+  )
 }
 export default Modal;
