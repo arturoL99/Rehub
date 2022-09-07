@@ -16,6 +16,7 @@ function BodyServizi(props) {
                     <h2 className="px-15">{servizio.titolo}</h2>
                     <h3 className="px-15">{servizio.sottotitolo}</h3>
                     <p className="px-15">{servizio.contenuto}</p>
+                    <p className="px-15">{servizio.contenuto2}</p>
                 </div>
                 <div>
                     <img src={img1} alt="lavoratori felici" className="img_fluid" />
