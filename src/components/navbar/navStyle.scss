@@ -108,11 +108,20 @@ header {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: #f6f6f6;
+  background-color: #f6f6f6d1;
   border-radius: 10px;
-  border: 1px solid #888888;
+  border: 1px solid #888888c5;
   top: 10px;
   z-index: 10;
+
+  a:hover{
+    color: black;
+    border-bottom: 3px solid #28669f;
+    margin-bottom: 0px;
+    text-decoration: none;
+    text-transform: none;
+    cursor: pointer;
+  }
 }
 
 .hideDesktop {

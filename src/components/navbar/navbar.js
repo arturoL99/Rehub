@@ -30,10 +30,10 @@ export default function Navbar() {
                 <div className="dropdown-container" onMouseEnter={() => setDrop(true)}
                     onMouseLeave={() => setDrop(false)}>
                     <Link to={""} className="mx-15 py-20 hideMobile">Servizi</Link>
-                    <div className={drop ? 'dropdown_content' : "hideDesktop"}>
-                        <Link to={"/servizi/utilizzatori"} className="mx-15 py-20">Utilizzatori</Link>
-                        <Link to={"/servizi/proprietari"} className="mx-15 py-20">Proprietari</Link>
-                        <Link to={"/servizi/investitori"} className="mx-15 py-20">Investitori</Link>
+                    <div className={drop ? 'dropdown_content py-10' : "hideDesktop"}>
+                        <Link to={"/servizi/utilizzatori"} className="mx-15 py-10">Utilizzatori</Link>
+                        <Link to={"/servizi/proprietari"} className="mx-15 py-2010">Proprietari</Link>
+                        <Link to={"/servizi/investitori"} className="mx-15 py-2010">Investitori</Link>
                     </div>
                 </div>
                 <Link to={"/proprieta"} className="mx-15 py-20">Cerca una proprietà</Link>
