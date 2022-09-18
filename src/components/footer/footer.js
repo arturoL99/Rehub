@@ -1,12 +1,12 @@
 import "./footerStyle.scss";
-import logo from "../../images/logoReHub.png";
+import logo from "../../images/logo.webp";
 import Navbar from "../navbar/navbar";
 
 export default function Footer() {
     return (
         <footer>
             <div className="logo-container">
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo" className="logo" />
             </div>
             <div className="footer">
                 <div className="footer-nav">
