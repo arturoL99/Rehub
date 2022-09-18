@@ -6,25 +6,25 @@ import './homeStyle.scss';
 export default function Hero() {
 
     const [counter, setCounter] = useState(0);
-    const [classe, setClasse] = useState(bgImg[counter]);
+    const [foto, setFoto] = useState(bgImg[counter]);
 
-    function avanti() {
+    const avanti = () => {
         setCounter(counter + 1);
         if (counter === bgImg.length - 1) {
             setCounter(0);
         }
-        setClasse(bgImg[counter]);
+        setFoto(bgImg[counter]);
     };
 
     useEffect(() => {
-        const interval = setInterval(avanti, 10000);
+        const interval = setInterval(avanti, 5000);
 
         return () => clearInterval(interval);
     })
 
     return (
         <section id="hero">
-            <img src={classe} className="heroBg" alt="background" />
+            <img src={foto} className="heroBg" alt="background" />
             <div className="hero_text">
                 <h2 className="text-shadow">Tutti i servizi immobiliari dedicati a:</h2>
                 <div className="btns">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../../images/logoReHub.png';
 import x from "../../images/x-full.svg";
 import './navStyle.scss';
@@ -8,17 +8,17 @@ export default function Navbar() {
 
     const [isOpen, setOpen] = useState(false);
     const [drop, setDrop] = useState(false);
-
+    const activeColor = { color:'#28669f' };
     const handleOpen = () => {
         setOpen(!isOpen);
     };
 
     return (
-        <header>
+        <section className='navbar'>
             <div className="container">
                 <div className='logoContainer'>
                     <img src={logo} alt="logo re-hub" className="logo" />
-                    <p className="mx-15 logo-title py-10">Re-Hub <br />Real Estate <br />Advisory & Agency</p>
+                    <p className="mx-15 logo-title py-10">RE-Hub <br />Real Estate Hub <br />Advisory & Agency</p>
                 </div>
                 <div className='menu'>
                     <img src={isOpen ? x : "https://img.icons8.com/ios/50/000000/menu--v1.png"}
@@ -26,21 +26,23 @@ export default function Navbar() {
                 </div>
             </div>
             <div className={isOpen ? "nav_open" : "nav"}>
-                <Link to={"/"} className="mx-15 py-20">Home</Link>
+                <NavLink to={"/"} className={({ isActive }) => isActive ? "active mx-15 py-20" : "mx-15 py-20"}>
+                    Home</NavLink>
                 <div className="dropdown-container" onMouseEnter={() => setDrop(true)}
                     onMouseLeave={() => setDrop(false)}>
-                    <Link to={""} className="mx-15 py-20 hideMobile">Servizi</Link>
+                    <a id="servizi" className="mx-15 py-20 hideMobile">Servizi</a>
                     <div className={drop ? 'dropdown_content py-10' : "hideDesktop"}>
-                        <Link to={"/servizi/utilizzatori"} className="mx-15 py-10">Utilizzatori</Link>
-                        <Link to={"/servizi/proprietari"} className="mx-15 py-2010">Proprietari</Link>
-                        <Link to={"/servizi/investitori"} className="mx-15 py-2010">Investitori</Link>
+                        <NavLink to={"/servizi/utilizzatori"} className= "mx-15 py-10">
+                            Utilizzatori</NavLink>
+                        <NavLink to={"/servizi/proprietari"} className="mx-15 py-10">Proprietari</NavLink>
+                        <NavLink to={"/servizi/investitori"} className="mx-15 py-10">Investitori</NavLink>
                     </div>
                 </div>
-                <Link to={"/proprieta"} className="mx-15 py-20">Cerca una proprietà</Link>
-                <Link to={"/blog"} className="mx-15 py-20">Blog</Link>
-                <Link to={"/join"} className="mx-15 py-20">Contatti</Link>
+                <NavLink to={"/proprieta"} className="mx-15 py-20">Cerca una proprietà</NavLink>
+                <NavLink to={"/news"} className="mx-15 py-20">News</NavLink>
+                <NavLink to={"/join"} className="mx-15 py-20">Contatti</NavLink>
             </div>
-        </header>
+        </section>
     )
 
 }

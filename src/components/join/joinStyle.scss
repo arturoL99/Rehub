@@ -35,7 +35,8 @@
                 width: 47%;
                 padding: 10px;
                 border-radius: 0;
-                border: 1px solid black;
+                // border: 1px solid black;
+                border: none;
 
                 @media(max-width: 950px){
                     width: 45%;
@@ -58,7 +59,8 @@
                 width: 100%;
                 padding: 10px;
                 border-radius: 0;
-                border: 1px solid black;
+                // border: 1px solid black;
+                border: none;
 
                 @media(min-width: 1400px){
                     input{
@@ -76,20 +78,23 @@
             justify-content: center;
 
             .form_btn{
-                border: 1px solid black;
+                border: none;
                 background-color: transparent;
                 margin-right:15px;
                 padding: 5px 20px;
                 font-size: medium;
+                font-weight: 500;
             }
             
             .form_btn:hover{
                 background-color: rgb(255, 255, 255);
                 color: #28669f;
-                border: 2px solid #28669f;
-                margin: -1px;
+                border: 1px solid #28669f;
                 text-shadow: none;
                 cursor: pointer;
+                font-weight: 600;
+                transform: scale(1.1);
+                transition: transform 300ms;
             }
         }
     }

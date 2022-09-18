@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Navbar from '../components/navbar/navbar'
-import Footer from '../components/footer/footer'
-import Body from '../components/servizi/body-servizi'
+import Body from '../components/servizi/body-servizi';
 import { client } from "../client/client";
 import Loading from "../components/loading/loading";
 
@@ -17,9 +15,7 @@ function Investirori() {
     if (servizi) {
         return (
             <>
-                <Navbar />
                 <Body counter={1} servizi={servizi} />
-                <Footer />
             </>
         )
     } else {
