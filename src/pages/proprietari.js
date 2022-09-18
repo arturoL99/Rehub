@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Navbar from '../components/navbar/navbar';
-import Footer from '../components/footer/footer';
 import Body from '../components/servizi/body-servizi';
 import { client } from "../client/client";
 import Loading from "../components/loading/loading";
@@ -17,9 +15,7 @@ function Propietari(){
     if(servizi){
     return(
         <>
-            <Navbar />
             <Body counter={2} servizi={servizi}/>
-            <Footer /> 
         </>        
     )
     }else{

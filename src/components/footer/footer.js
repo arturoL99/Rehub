@@ -1,25 +1,25 @@
-import React from "react";
-import './footStyle.scss';
-import Logo from '../../images/logoReHub.png';
+import "./footerStyle.scss";
+import logo from "../../images/logoReHub.png";
+import Navbar from "../navbar/navbar";
 
-export default function footer() {
+export default function Footer() {
     return (
         <footer>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="#">Servizi</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/join">Contatti</a></li>
-            </ul>
-            <ul>
-                <li><img src={Logo} className="footerLogo" alt="rehub logo" /></li>
-            </ul>
-            <ul className="cerca">
-                <li>Cerca una proprietà :</li>
-                <li><a>Cerca per regione</a></li>
-                <li><a>Cerca per lifestyle</a></li>
-            </ul>
-
+            <div className="logo-container">
+                <img src={logo} alt="logo" />
+            </div>
+            <div className="footer">
+                <div className="footer-nav">
+                    <Navbar />
+                </div>
+                <div className="footer-content">
+                    <small className="my-5">RE-Hub Srl - 20129 Milano (MI) - Via Francesco Nullo n.5 -
+                        Tel.348 4414871 - P.IVA 11191330965 - N.REA MI2585603</small>
+                    <small className="my-5">PEC: re-hub@pec.it</small>
+                    <small className="my-5">Tutto il contenuto di questo sito è Copyright © RE-Hub Srl -
+                        <a>Privacy Policy</a> - <a>Cookie Policy</a></small>
+                </div>
+            </div>
         </footer>
     )
 }
