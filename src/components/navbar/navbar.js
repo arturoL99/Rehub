@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../images/logoReHub.png';
+import logo from '../../images/logo.webp';
 import x from "../../images/x-full.svg";
 import './navStyle.scss';
 
@@ -18,7 +18,7 @@ export default function Navbar() {
             <div className="container">
                 <div className='logoContainer'>
                     <img src={logo} alt="logo re-hub" className="logo" />
-                    <p className="mx-15 logo-title py-10">RE-Hub <br />Real Estate Hub <br />Advisory & Agency</p>
+                    {/* <p className="mx-15 logo-title py-10">RE-Hub <br />Real Estate Hub <br />Advisory & Agency</p> */}
                 </div>
                 <div className='menu'>
                     <img src={isOpen ? x : "https://img.icons8.com/ios/50/000000/menu--v1.png"}
