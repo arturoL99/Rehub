@@ -1,7 +1,5 @@
 import React from "react";
 import './servStyle.scss';
-import img1 from '../../images/servizi1.webp';
-import img2 from '../../images/servizi3.webp';
 
 
 function BodyServizi(props) {
@@ -19,7 +17,7 @@ function BodyServizi(props) {
                     <p className="px-15">{servizio.contenuto2}</p>
                 </div>
                 <div>
-                    <img src={img1} alt="lavoratori felici" className="img_fluid" />
+                    <img src={props.img[0]} alt="lavoratori felici" className="img_fluid" />
                 </div>
             </div>
 
@@ -31,7 +29,7 @@ function BodyServizi(props) {
                     </ul>
                 </div>
                 <div>
-                    <img src={img2} alt="collaborazione" className="img" />
+                    <img src={props.img[1]} alt="collaborazione" className="img" />
                 </div>
             </div>
         </section>

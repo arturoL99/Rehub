@@ -11,7 +11,7 @@ export default function Hero() {
 
     const avanti = () => {
         setCounter(counter + 1);
-        if (counter === bgImg.length - 1) {
+        if (counter === imgArray.length - 1) {
             setCounter(0);
         }
          setFoto(imgArray[counter]);

@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../images/logo.webp';
 import x from "../../images/x-full.svg";
+import { useLockScroll } from '../../utils/useLockScroll';
 import './navStyle.scss';
 
 export default function Navbar() {
 
     const [isOpen, setOpen] = useState(false);
     const [drop, setDrop] = useState(false);
+    const { lockScroll, unlockScroll } = useLockScroll();
     
     const handleOpen = () => {
         setOpen(!isOpen);
@@ -16,6 +18,10 @@ export default function Navbar() {
     const handleClose = () => {
         setOpen(false);
     };
+
+    useEffect(() => {
+        isOpen ? lockScroll() : unlockScroll();
+    }, [isOpen])
 
     return (
         <section className='navbar'>
