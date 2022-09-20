@@ -8,9 +8,13 @@ export default function Navbar() {
 
     const [isOpen, setOpen] = useState(false);
     const [drop, setDrop] = useState(false);
-    const activeColor = { color:'#28669f' };
+    
     const handleOpen = () => {
         setOpen(!isOpen);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
     };
 
     return (
@@ -26,21 +30,25 @@ export default function Navbar() {
                 </div>
             </div>
             <div className={isOpen ? "nav_open" : "nav"}>
-                <NavLink to={"/"} className={({ isActive }) => isActive ? "active mx-15 py-20" : "mx-15 py-20"}>
+                <NavLink to={"/"} onClick={handleClose}
+                className={({ isActive }) => isActive ? "active mx-15 py-20" : "mx-15 py-20"}>
                     Home</NavLink>
                 <div className="dropdown-container" onMouseEnter={() => setDrop(true)}
                     onMouseLeave={() => setDrop(false)}>
                     <a id="servizi" className="mx-15 py-20 hideMobile">Servizi</a>
                     <div className={drop ? 'dropdown_content py-10' : "hideDesktop"}>
-                        <NavLink to={"/servizi/utilizzatori"} className= "mx-15 py-10">
+                        <NavLink to={"/servizi/utilizzatori"} className= "mx-15 py-10" onClick={handleClose}>
                             Utilizzatori</NavLink>
-                        <NavLink to={"/servizi/proprietari"} className="mx-15 py-10">Proprietari</NavLink>
-                        <NavLink to={"/servizi/investitori"} className="mx-15 py-10">Investitori</NavLink>
+                        <NavLink to={"/servizi/proprietari"} className="mx-15 py-10" onClick={handleClose}>
+                            Proprietari</NavLink>
+                        <NavLink to={"/servizi/investitori"} className="mx-15 py-10" onClick={handleClose}>
+                            Investitori</NavLink>
                     </div>
                 </div>
-                <NavLink to={"/proprieta"} className="mx-15 py-20">Cerca una proprietà</NavLink>
-                <NavLink to={"/news"} className="mx-15 py-20">News</NavLink>
-                <NavLink to={"/join"} className="mx-15 py-20">Contatti</NavLink>
+                <NavLink to={"/proprieta"} className="mx-15 py-20" onClick={handleClose}>
+                    Cerca una proprietà</NavLink>
+                <NavLink to={"/news"} className="mx-15 py-20" onClick={handleClose}>News</NavLink>
+                <NavLink to={"/join"} className="mx-15 py-20" onClick={handleClose}>Contatti</NavLink>
             </div>
         </section>
     )

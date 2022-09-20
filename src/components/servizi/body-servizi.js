@@ -1,6 +1,6 @@
 import React from "react";
 import './servStyle.scss';
-import img1 from '../../images/servizi1.jpeg';
+import img1 from '../../images/servizi1.webp';
 import img2 from '../../images/servizi3.webp';
 
 

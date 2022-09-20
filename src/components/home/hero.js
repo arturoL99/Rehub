@@ -1,26 +1,46 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { bgImg } from "../../utils/ImageUtils";
+import { bgImg, bgImgMobile } from "../../utils/ImageUtils";
 import './homeStyle.scss';
 
 export default function Hero() {
 
     const [counter, setCounter] = useState(0);
-    const [foto, setFoto] = useState(bgImg[counter]);
+    const [imgArray, setImgArray] = useState([]);
+    const [foto, setFoto] = useState();
 
     const avanti = () => {
         setCounter(counter + 1);
         if (counter === bgImg.length - 1) {
             setCounter(0);
         }
-        setFoto(bgImg[counter]);
+         setFoto(imgArray[counter]);
     };
 
+    const handleResize = () => {
+        if (window.innerWidth > 500) {
+          setImgArray(bgImg);
+          setFoto(bgImg[counter]);
+        } else {
+          setImgArray(bgImgMobile);
+          setFoto(bgImgMobile[counter]);
+        }
+      };
+    
     useEffect(() => {
         const interval = setInterval(avanti, 5000);
 
         return () => clearInterval(interval);
-    })
+    });
+
+    useEffect(() => {
+    
+        handleResize();
+    
+        window.addEventListener("resize", handleResize);
+    
+        return () => window.removeEventListener("resize", handleResize);
+      }, []);
 
     return (
         <section id="hero">
