@@ -1,10 +1,12 @@
 import React from "react";
-import Body from '../components/join/contactForm';
+import Contact from "../components/contact/contact";
+import ContactForm from '../components/join/contactForm';
 
 function JoinUs(){
     return(
         <>
-            <Body />
+            <Contact />
+            <ContactForm />
         </>        
     )
 }

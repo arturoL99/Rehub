@@ -28,6 +28,18 @@
     .dropdown_content {
       position: relative;
       border: 1px solid dark;
+
+      @media (max-width: 950px) {
+        position: static;
+        border: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        a {
+          padding: 20px 0px;
+        }
+      }
     }
   }
 
