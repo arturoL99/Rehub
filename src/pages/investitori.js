@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Body from '../components/servizi/body-servizi';
-import { client } from "../client/client";
+import contentfulClient from "../client/client";
 import Loading from "../components/loading/loading";
 import { imgInvestitori } from "../utils/ImageUtils";
 
@@ -10,8 +10,9 @@ function Investirori() {
     const img = imgInvestitori;
 
     useEffect(() => {
-        client.getServizi()
-            .then((res) => setServizi(res))
+        contentfulClient.getEntry('6VpEOuP5yhL0CCWoYpauTR')
+            .then((entry) => setServizi(entry.fields))
+            .catch(console.error)
     }, []);
     
     if (servizi) {

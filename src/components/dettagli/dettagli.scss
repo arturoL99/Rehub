@@ -1,0 +1,10 @@
+.dettagli {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+
+  &_container {
+    width: 50%;
+    height: fit-content;
+  }
+}

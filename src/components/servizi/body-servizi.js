@@ -4,17 +4,17 @@ import './servStyle.scss';
 
 function BodyServizi(props) {
 
-    const servizio = props.servizi.at(props.counter);
-    const lista_servizi = servizio.lista;
-
+    const servizio = props.servizi;
+    const lista_servizi = servizio.listaServizi;
+    console.log(servizio.contenuto.content[0].content[0].value);
     return (
         <section id="main">
             <div className="main_top">
                 <div className="card">
                     <h2 className="px-15">{servizio.titolo}</h2>
                     <h3 className="px-15">{servizio.sottotitolo}</h3>
-                    <p className="px-15">{servizio.contenuto}</p>
-                    <p className="px-15">{servizio.contenuto2}</p>
+                    <p className="px-15">{servizio.contenuto.content[0].content[0].value}</p>
+                    <p className="px-15">{servizio.contenuto.content[1].content[0].value}</p>
                 </div>
                 <div>
                     <img src={props.img[0]} alt="lavoratori felici" className="img_fluid" />

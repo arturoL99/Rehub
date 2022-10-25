@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { client } from '../../client/client';
+import contentfulClient from '../../client/client';
 import Article from './article';
 
 export default function ArticleContainer() {
@@ -7,8 +7,9 @@ export default function ArticleContainer() {
     const [art, setArt] = useState(null);
 
     useEffect(() => {
-        client.getArticles()
-            .then((res) => setArt(res))
+        contentfulClient.getEntries({
+            content_type: "blog"
+        }).then((entry) => setArt(entry));
     }, []);
 
     return (

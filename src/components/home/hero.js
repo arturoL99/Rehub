@@ -50,7 +50,7 @@ export default function Hero() {
                 <div className="btns">
                     <Link to={"/servizi/utilizzatori"} className="hero_btn">Utilizzatori</Link>
                     <Link to={"/servizi/proprietari"} className="hero_btn">Proprietari</Link>
-                    <Link to={"/servizi/investitori"} className="hero_btn">Investirori</Link>
+                    <Link to={"/servizi/investitori"} className="hero_btn">Investitori</Link>
                 </div>
             </div>
         </section>
