@@ -1,109 +1,128 @@
 #main-proprietà {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  .container-annunci {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .annunci {
     display: flex;
     flex-direction: row;
-    overflow-x: hidden;
-    .container-annunci{
-        display: flex;
-        flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50vw;
+    height: 75vh;
+    overflow: auto;
+    margin-right: 2px;
+
+    @media (max-width: 950px) {
+      width: 100%;
+      height: auto;
+      justify-content: flex-start;
     }
 
-    .annunci {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 50vw;
-        height: 75vh;
-        overflow: auto;
-        margin-right: 2px;
-
-        @media(max-width: 950px){
-            width: 100%;
-            height: auto;
-            justify-content: flex-start;
-        }
-
-        @media(max-width: 800px){
-            justify-content: center;
-        }
-
-        @media(min-width: 1100px){
-            justify-content: space-evenly;
-        }
-
-        .card {
-            height: 70vh;
-            width: 20vw;
-            margin: 10px;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-
-            @media(max-width: 950px){
-                width: 28vw;
-                height: 40vh;
-            }
-
-            @media(max-width: 800px){
-                width: 40vw;
-                height: 45vh;
-            }
-
-            @media(max-width: 500px){
-                width: 38vw;
-                height: 35vh;
-            }
-
-            @media(min-width: 1100px){
-                width: 20vw;
-                height: 60vh;
-            }
-
-            .card-content {
-                color: white;
-                margin: 0;
-                padding: 3px 15px;
-            }
-
-            .card-container {
-                display: flex;
-                justify-content: space-between;
-                padding: 0 15px;
-                color: white;
-                font-style: italic;
-
-                .card-btn {
-                    border: none;
-                    background-color: transparent;
-                    color: white;
-                    font-size: medium;
-                    font-weight: bold;
-                    cursor: pointer;
-                }
-            }
-        }
-
-        .card:hover {
-            box-shadow: 0px 5px 10px 5px #888888;
-            cursor: pointer;
-        }
-
+    @media (max-width: 800px) {
+      justify-content: center;
     }
 
-    .mappa {
-        width: 50vw;
-        height: 81vh;
-        border: none;
-
-        @media(max-width: 950px){
-            display: none;
-        }
+    @media (min-width: 1100px) {
+      justify-content: space-evenly;
     }
+  }
 
-    @media(max-width: 950px){
-        flex-direction: column;
+  .mappa {
+    width: 50vw;
+    height: 81vh;
+    border: none;
+
+    @media (max-width: 950px) {
+      display: none;
     }
+  }
 
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  height: 70vh;
+  width: 40vw;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: linear-gradient(
+    0deg,
+    rgb(2, 0, 36) -100%,
+    rgb(9, 9, 9) 3%,
+    rgba(255, 255, 255, 0.2637429972) 82%
+  );
+
+  @media (max-width: 950px) {
+    width: 90vw;
+    height: 80vh;
+  }
+
+  @media(max-width: 800px){
+      width: 40vw;
+      height: 45vh;
+  }
+
+  @media(max-width: 500px){
+      width: 38vw;
+      height: 35vh;
+  }
+
+  @media (min-width: 1100px) {
+    width: 40vw;
+    height: 73vh;
+  }
+
+  .card-content {
+    color: white;
+    margin: 0;
+    padding: 3px 15px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    color: white;
+    font-style: italic;
+
+    .card-btn {
+      border: none;
+      background-color: transparent;
+      color: white;
+      font-size: medium;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+
+.card:hover {
+  box-shadow: 0px 5px 10px 5px #888888;
+  cursor: pointer;
+}
+
+.card_img {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.card-text {
+  position: absolute;
+}
+
+.link_annuncio{
+  background-color: transparent !important;
 }

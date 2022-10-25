@@ -1,27 +1,29 @@
 import React, { useState, useEffect } from "react";
 import Body from '../components/servizi/body-servizi';
-import { client } from "../client/client";
+import contentfulClient, { client } from "../client/client";
 import Loading from "../components/loading/loading";
 import { imgProprietari } from "../utils/ImageUtils";
 
-function Propietari(){
+function Propietari() {
 
     const [servizi, setServizi] = useState();
     const img = imgProprietari;
 
     useEffect(() => {
-        client.getServizi()
-            .then((res) => setServizi(res))
+        contentfulClient.getEntry('bkYlKsP6K7LDMsRifGGVp')
+            .then((entry) => setServizi(entry.fields))
+            .catch(console.error)
     }, []);
 
-    if(servizi){
-    return(
-        <>
-            <Body counter={2} servizi={servizi} img={img} />
-        </>        
-    )
-    }else{
-        return(
+    if (servizi) {
+        console.log(servizi);
+        return (
+            <>
+                <Body servizi={servizi} img={img} />
+            </>
+        )
+    } else {
+        return (
             <Loading />
         )
     }

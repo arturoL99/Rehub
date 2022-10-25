@@ -20,7 +20,8 @@ input:required:valid {
 }
 
 a:hover {
-    color: #28669f;
+    color: white !important;
+    background-color: #1e4499;
     // border-bottom: 3px solid #28669f;
     // margin-bottom: -3px;
     text-decoration: none;
@@ -48,6 +49,9 @@ a:hover {
     margin: 0px 15px;
 }
 
+.p-10{
+    padding: 10px;
+}
 .px-15 {
     padding: 0px 15px;
 }
@@ -77,39 +81,11 @@ a:hover {
     margin: 20px 0px;
 }
 
-.bg_card1 {
-    background-image:linear-gradient(0deg, rgb(2, 0, 36) -100%, rgb(9, 9, 9) 3%, rgba(255, 255, 255, 0.2637429972) 82%), 
-    url('../images/boscoCitta.webp');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.bg_card2 {
-    background-image:linear-gradient(0deg, rgb(2, 0, 36) -100%, rgb(9, 9, 9) 3%, rgba(255, 255, 255, 0.2637429972) 82%), 
-    url('../images/cityLife.webp');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.bg_card3 {
-    background-image:linear-gradient(0deg, rgb(2, 0, 36) -100%, rgb(9, 9, 9) 3%, rgba(255, 255, 255, 0.2637429972) 82%), 
-    url('../images/martini.webp');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.bg_card4 {
-    background-image:linear-gradient(0deg, rgb(2, 0, 36) -100%, rgb(9, 9, 9) 3%, rgba(255, 255, 255, 0.2637429972) 82%), 
-    url('../images/palazzo1.webp');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.bg_card5 {
-    background-image:linear-gradient(0deg, rgb(2, 0, 36) -100%, rgb(9, 9, 9) 3%, rgba(255, 255, 255, 0.2637429972) 82%), 
-    url('../images/interno1.webp');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.proprieta_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
 }
 
 .img_fluid {

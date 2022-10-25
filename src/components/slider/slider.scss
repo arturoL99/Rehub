@@ -1,0 +1,25 @@
+.slider {
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 60vh;
+    background-color: #333333;
+  }
+
+  &_img {
+    height: 100%;
+    width: auto;
+  }
+
+  &_counter{
+    position: absolute;
+    color: white;
+    margin: 23vh 0;
+  }
+
+  &_arrow:hover{
+    cursor: pointer;
+  }
+}

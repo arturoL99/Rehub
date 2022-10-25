@@ -9,6 +9,7 @@ import Blog from './pages/blog'
 import Utilities from './style/utilities.scss'
 import Test from "./pages/testPage";
 import Proprietà from "./pages/proprietà";
+import ProprietàSingola from "./pages/proprietàSingola";
 //importare qui css?
 
 function App() {
@@ -19,9 +20,10 @@ function App() {
                 <Route exact path="/servizi/utilizzatori" element={<Utilizzatori />}/>
                 <Route exact path="/servizi/investitori" element={<Investirori />}/>
                 <Route exact path="/servizi/proprietari" element={<Propietari />}/>
-                <Route exact path="/join" element={<JoinUs />}/>
+                <Route exact path="/contatti" element={<JoinUs />}/>
                 <Route exact path="/news" element={<Blog />}/>
                 <Route exact path="/proprieta" element={<Proprietà />}/>
+                <Route exact path={"/proprieta/:id"} element={<ProprietàSingola />}/>
                 <Route exact path="/test" element={<Test />}/>
             </Routes>
         </>

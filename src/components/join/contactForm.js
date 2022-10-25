@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { client } from "../../client/client";
+import { client } from "../../client/mailClient";
 import './joinStyle.scss';
 
 function BodyJoin() {
