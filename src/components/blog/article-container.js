@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import contentfulClient from '../../client/client';
 import Article from './article';
+import Loading from "../loading/loading"
 
 export default function ArticleContainer() {
 
@@ -9,9 +10,10 @@ export default function ArticleContainer() {
     useEffect(() => {
         contentfulClient.getEntries({
             content_type: "blog"
-        }).then((entry) => setArt(entry));
+        }).then((entry) => setArt(entry.items));
     }, []);
 
+    if(!art) return <Loading /> 
     return (
         <>
             {

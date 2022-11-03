@@ -10,7 +10,7 @@ export default function Navbar() {
     const [isOpen, setOpen] = useState(false);
     const [drop, setDrop] = useState(false);
     const { lockScroll, unlockScroll } = useLockScroll();
-    
+
     const handleOpen = () => {
         setOpen(!isOpen);
     };
@@ -37,20 +37,31 @@ export default function Navbar() {
             </div>
             <div className={isOpen ? "nav_open" : "nav"}>
                 <NavLink to={"/"} onClick={handleClose}
-                className={({ isActive }) => isActive ? "active mx-15" : "mx-15"}>
+                    className={({ isActive }) => isActive ? "active mx-15" : "mx-15"}>
                     Home</NavLink>
-                <div className="dropdown-container" onMouseEnter={() => setDrop(true)}
+                <div className="dropdown hideMobile mx-15">
+                    <button className="dropbtn hideMobile">Servizi</button>
+                    <div className="dropdown-content">
+                        <NavLink to={"/servizi/utilizzatori"}>Utilizzatori</NavLink>
+                        <NavLink to={"/servizi/proprietari"}>Propietari</NavLink>
+                        <NavLink to={"/servizi/investitori"}>Investirori</NavLink>
+                    </div>
+                </div>
+                <NavLink className="mx-15 hideDesktop" to={"/servizi/utilizzatori"}>Utilizzatori</NavLink>
+                <NavLink className="mx-15 hideDesktop" to={"/servizi/proprietari"}>Propietari</NavLink>
+                <NavLink className="mx-15 hideDesktop" to={"/servizi/investitori"}>Investirori</NavLink>
+                {/* <div className="dropdown-container" onMouseEnter={() => setDrop(true)}
                     onMouseLeave={() => setDrop(false)}>
                     <a id="servizi" className="mx-15 hideMobile">Servizi</a>
                     <div className={drop ? 'dropdown_content' : "hideDesktop"}>
-                        <NavLink to={"/servizi/utilizzatori"} className= "mx-15" onClick={handleClose}>
+                        <NavLink to={"/servizi/utilizzatori"} className="mx-15" onClick={handleClose}>
                             Utilizzatori</NavLink>
                         <NavLink to={"/servizi/proprietari"} className="mx-15" onClick={handleClose}>
                             Proprietari</NavLink>
                         <NavLink to={"/servizi/investitori"} className="mx-15" onClick={handleClose}>
                             Investitori</NavLink>
                     </div>
-                </div>
+                </div> */}
                 <NavLink to={"/proprieta"} className="mx-15" onClick={handleClose}>
                     Cerca una proprietà</NavLink>
                 <NavLink to={"/news"} className="mx-15" onClick={handleClose}>News</NavLink>

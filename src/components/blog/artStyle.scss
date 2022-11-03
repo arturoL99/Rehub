@@ -1,7 +1,7 @@
 #content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0 25px;
 
     @media (max-width: 700px) {
@@ -20,14 +20,15 @@
     }
 
     .content__card {
-        width: 30%;
+        width: 30vw;
+        height: auto;
         text-align: justify;
-        padding: 0 15px;
+        padding: 10px;
         margin: 10px 0px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-evenly;
+        
 
         #art-p {
             height: 150px;
@@ -35,7 +36,7 @@
         }
 
         #art-img {
-            height: 200px;
+            height: fit-content;
 
             img {
                 width: 100%;
@@ -52,22 +53,16 @@
         }
     }
 
-    .content__tag {
-        width: fit-content;
-        padding: 5px;
-        color: white;
-        background-color: #28669f;
-        border: 1px solid #28669f;
-        border-radius: 10px;
-    }
-
     .content__btn {
         border: 2px solid #28669f;
-
+        background-color: transparent;
+        margin: 10px 0;
     }
 
     .content__btn:hover{
         background-color: #28669f;
+        color: white;
+        cursor: pointer;
     }
 
     a:hover{

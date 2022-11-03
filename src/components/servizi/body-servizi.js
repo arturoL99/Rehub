@@ -10,7 +10,7 @@ function BodyServizi(props) {
     return (
         <section id="main">
             <div className="main_top">
-                <div className="card">
+                <div className="card_servizi">
                     <h2 className="px-15">{servizio.titolo}</h2>
                     <h3 className="px-15">{servizio.sottotitolo}</h3>
                     <p className="px-15">{servizio.contenuto.content[0].content[0].value}</p>
@@ -22,7 +22,7 @@ function BodyServizi(props) {
             </div>
 
             <div className="main_bottom">
-                <div className="card">
+                <div className="card_servizi">
                     <h2 className="px-40">{servizio.titolo2}</h2>
                     <ul>
                         {lista_servizi?.map(serv => <li key={serv}>{serv}</li>)}
