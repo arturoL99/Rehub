@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Annunci from "../components/annunci/annunci";
 import contentfulClient from "../client/client";
+import Loading from "../components/loading/loading";
 
 function Proprietà(){
     const [annunci, setAnnunci] = useState();
@@ -12,7 +13,7 @@ function Proprietà(){
             .catch(console.error)
     }, []);
     
-    if(!annunci) return <div>loading...</div>
+    if(!annunci) return <Loading />
     return(
         <>
             <Annunci annunci={annunci} />

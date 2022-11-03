@@ -13,7 +13,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 50vw;
-    height: 75vh;
+    height: 80vh;
     overflow: auto;
     margin-right: 2px;
 
@@ -50,7 +50,7 @@
 .card {
   position: relative;
   overflow: hidden;
-  height: 70vh;
+  height: 75vh;
   width: 40vw;
   margin: 10px;
   border-radius: 10px;
@@ -75,13 +75,8 @@
   }
 
   @media(max-width: 500px){
-      width: 38vw;
-      height: 35vh;
-  }
-
-  @media (min-width: 1100px) {
-    width: 40vw;
-    height: 73vh;
+      width: 78vw;
+      height: 60vh;
   }
 
   .card-content {

@@ -3,8 +3,16 @@
   flex-direction: column;
   padding: 0 50px;
 
+  @media(max-width: 950px){
+    padding: 0;
+  }
+
   &_container {
     width: 50%;
     height: fit-content;
+
+    @media(max-width: 950px){
+      width: 100%;
+    }
   }
 }

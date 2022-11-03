@@ -6,20 +6,52 @@
     width: 50%;
     height: 60vh;
     background-color: #333333;
+
+    @media(max-width: 950px){
+      width: 100%;
+    }
+
+    &_open {
+      z-index: 100;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100vw;
+      height: 100vh;
+      background-color: #333333;
+    }
   }
 
   &_img {
     height: 100%;
     width: auto;
+    max-width: 40vw;
+    cursor: url("../../images/plus.svg"), auto;
+
+    &_open{
+      height: 100%;
+      width: auto;
+      max-width: 90vw;
+      cursor: url("../../images/plus.svg"), auto;
+    }
   }
 
-  &_counter{
+  &_counter {
     position: absolute;
     color: white;
     margin: 23vh 0;
+
+    &_open {
+      position: absolute;
+      color: white;
+      margin: 37vh 0;
+    }
   }
 
-  &_arrow:hover{
+  &_arrow:hover {
     cursor: pointer;
   }
 }

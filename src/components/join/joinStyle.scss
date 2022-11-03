@@ -1,3 +1,5 @@
+@import "../../style/colors";
+
 #form-contatti{
     margin: 50px 0px;
     .cont_top{
@@ -79,8 +81,8 @@
 
             .form_btn{
                 background-color: rgb(255, 255, 255);
-                color: #1e4499;
-                border: 1px solid #1e4499;
+                color: $blue;
+                border: 1px solid $blue;
                 text-shadow: none;
                 cursor: pointer;
                 font-weight: 600;
@@ -90,7 +92,7 @@
             }
             
             .form_btn:hover{
-                background-color: #1e4499;
+                background-color: $blue;
                 color: white;
                 cursor: pointer;
             }

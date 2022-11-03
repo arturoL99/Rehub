@@ -1,3 +1,5 @@
+@import "../../style/colors";
+
 #hero {
     position: relative;
     height: 95vh;
@@ -31,6 +33,7 @@
             margin-right: 15px;
             padding: 5px 10px;
             font-size: large;
+            transition: 0.5s;
         }
 
         @media(max-width: 500px) {
@@ -47,11 +50,11 @@
 
     .hero_btn:hover {
         background-color: rgb(255, 255, 255);
-        color: #28669f;
-        border: 2px solid #28669f;
+        color: $blue !important;
+        border: 2px solid $blue;
         margin-bottom: 0px;
         text-shadow: none;
-        transition: all 0.3s ease-in-out;
+        transition: 0.5s;
     }
 
     .hero_text {

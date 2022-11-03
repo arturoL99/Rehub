@@ -7,6 +7,7 @@ import rightArrow from "../../images/arrowRight.png";
 export default function Slider(props) {
     const [immagini, setImmagini] = useState(props.immagini);
     const [counter, setCounter] = useState(0);
+    const [open, setOpen] = useState(false);
 
     const avanti = () => {
         if (counter < immagini.length - 1) setCounter(counter + 1);
@@ -20,14 +21,15 @@ export default function Slider(props) {
 
     if (!immagini) return <Loading />;
     return (
-        <div className="slider_container">
+        <div className={open ? "slider_container_open" : "slider_container"}>
             <div>
                 <img src={leftArrow} onClick={indietro} className="slider_arrow" />
             </div>
-            <img src={immagini[counter].fields.file.url} className="slider_img" />
+            <img src={immagini[counter].fields.file.url}
+                className={open ? "slider_img_open" : "slider_img"} onClick={() => setOpen(!open)} />
             <div>
                 <img src={rightArrow} onClick={avanti} className="slider_arrow" />
-                <p className="slider_counter">{counter + 1}/{immagini.length}</p>
+                <p className={open ? "slider_counter_open" : "slider_counter"}>{counter + 1}/{immagini.length}</p>
             </div>
         </div>
     )

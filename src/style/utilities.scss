@@ -1,3 +1,5 @@
+@import "./colors";
+
 @font-face {
     font-family: Imported;
     src: url(./AvenirNextLTPro-Regular.otf);
@@ -21,9 +23,7 @@ input:required:valid {
 
 a:hover {
     color: white !important;
-    background-color: #1e4499;
-    // border-bottom: 3px solid #28669f;
-    // margin-bottom: -3px;
+    background-color: $blue;
     text-decoration: none;
     text-transform: none;
     cursor: pointer;
@@ -85,7 +85,12 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    padding-bottom: 30px;
+
+    @media(max-width: 950px){
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .img_fluid {

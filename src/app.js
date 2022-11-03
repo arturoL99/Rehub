@@ -6,7 +6,7 @@ import Utilizzatori from "./pages/utilizzatori";
 import Investirori from "./pages/investitori";
 import Propietari from "./pages/proprietari";
 import Blog from './pages/blog'
-import Utilities from './style/utilities.scss'
+import'./style/utilities.scss';
 import Test from "./pages/testPage";
 import Proprietà from "./pages/proprietà";
 import ProprietàSingola from "./pages/proprietàSingola";

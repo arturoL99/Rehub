@@ -5,7 +5,7 @@ import Dettagli from "../components/dettagli/dettagli";
 import Loading from "../components/loading/loading";
 import Slider from "../components/slider/slider";
 
-function ProprietàSingola(){
+function ProprietàSingola() {
     const { id } = useParams();
     const [proprieta, setProprieta] = useState();
 
@@ -13,13 +13,16 @@ function ProprietàSingola(){
         contentfulClient.getEntry(id).then((res) => setProprieta(res.fields));
     }, []);
 
-    if(!proprieta) return <Loading />
+    if (!proprieta) return <Loading />
     console.log(proprieta);
-    return(
-        <section className="proprieta_container">
-            <Slider immagini={proprieta.media} />
-            <Dettagli proprieta={proprieta} />
-        </section>        
+    return (
+        <>
+            <h2 className="my-20">{proprieta.nome}</h2>
+            <section className="proprieta_container">
+                <Slider immagini={proprieta.media} />
+                <Dettagli proprieta={proprieta} />
+            </section>
+        </>
     )
 }
 
