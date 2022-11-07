@@ -7,15 +7,13 @@ function Modal(props) {
   return (
     <div className="modalContainer">
       <div className="modal">
-        <div className="modalTitle px-15">
+        <div className="modalTitle">
           <h2>{props.art.titolo}</h2>
           <button className="modalClose" onClick={() => { props.setModal(false) }}>X</button>
         </div>
 
-        <div className="modalContent px-15">
+        <div className="modalContent">
           <p>{props.art.testo.content[0].content[0].value}</p>
-          <h1></h1>
-          <p>{props.art.paragrafo2}</p>
         </div>
       </div>
     </div>
