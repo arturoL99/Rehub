@@ -1,8 +1,9 @@
 .slider {
   &_container {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 50%;
     height: 60vh;
     background-color: #333333;
@@ -18,7 +19,7 @@
       left: 0;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       width: 100vw;
       height: 100vh;
       background-color: #333333;
@@ -28,27 +29,41 @@
   &_img {
     height: 100%;
     width: auto;
-    max-width: 40vw;
+    max-width: 100%;
     cursor: url("../../images/plus.svg"), auto;
 
     &_open{
       height: 100%;
       width: auto;
-      max-width: 90vw;
+      max-width: 100%;
       cursor: url("../../images/plus.svg"), auto;
     }
   }
 
   &_counter {
     position: absolute;
+    bottom: 0;
+    right: 0;
     color: white;
-    margin: 23vh 0;
+    margin: 10px;
 
     &_open {
       position: absolute;
+      bottom: 0;
+    right: 0;
       color: white;
-      margin: 37vh 0;
+      margin: 20px;
     }
+  }
+
+  &_arrow_left{
+    position: absolute;
+    left: 0;
+  }
+
+  &_arrow_right{
+    position: absolute;
+    right: 0;
   }
 
   &_arrow:hover {

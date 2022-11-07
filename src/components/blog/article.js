@@ -14,10 +14,6 @@ export default function Article(prop) {
             </div>
             <div>
                 <button onClick={() => setModal(true)} className="content__btn">Leggi</button>
-                {/* <a href="#" onClick={(e) => {
-                    e.preventDefault();
-                    setModal(true);
-                }}>See more</a> */}
                 {modal && <Modal setModal={setModal} art={art} />}
             </div>
         </article>

@@ -12,8 +12,9 @@ function BodyJoin() {
 
     const addAvviso = (e) => {
         if (nome, cognome, mail, messaggio !== "") {
+            e.preventDefault();
             console.log(avviso);
-            client.addMail(avviso).then((res) => console.log(res));
+            client.addMail(avviso).then((res) => console.log("RES", res));
         } else {
             console.log("campo vuoto");
         }
