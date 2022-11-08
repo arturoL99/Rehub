@@ -3,10 +3,8 @@ import './servStyle.scss';
 
 
 function BodyServizi(props) {
-
     const servizio = props.servizi;
     const lista_servizi = servizio.listaServizi;
-    console.log(servizio.contenuto.content[0].content[0].value);
     return (
         <section id="main">
             <div className="main_top">

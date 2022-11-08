@@ -1,7 +1,6 @@
 import React from 'react';
 
 function CardAnnuncio(props) {
-    console.log(props.annuncio.copertina.fields.file.url)
     return (
         <div className='card'>
             <img src={props.annuncio.copertina.fields.file.url} className="card_img" />

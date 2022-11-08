@@ -16,7 +16,6 @@ function Propietari() {
     }, []);
 
     if (servizi) {
-        console.log(servizi);
         return (
             <>
                 <Body servizi={servizi} img={img} />
