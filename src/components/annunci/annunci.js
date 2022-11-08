@@ -4,7 +4,6 @@ import CardAnnuncio from "./cardAnnuncio";
 import { NavLink } from 'react-router-dom';
 
 function Annunci(props) {
-    console.log(props.annunci);
     return (
         <section id="main-proprietà">
             <div className="container-annunci">

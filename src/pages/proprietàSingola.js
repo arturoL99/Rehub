@@ -14,7 +14,6 @@ function ProprietàSingola() {
     }, []);
 
     if (!proprieta) return <Loading />
-    console.log(proprieta);
     return (
         <>
             <h2 className="my-20">{proprieta.nome}</h2>
