@@ -10,7 +10,6 @@ import'./style/utilities.scss';
 import Test from "./pages/testPage";
 import Proprietà from "./pages/proprietà";
 import ProprietàSingola from "./pages/proprietàSingola";
-//importare qui css?
 
 function App() {
     return (
