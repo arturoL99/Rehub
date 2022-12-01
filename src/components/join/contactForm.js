@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { client } from "../../client/mailClient";
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 import './joinStyle.scss';
 
 function BodyJoin() {
@@ -8,13 +8,21 @@ function BodyJoin() {
     const [cognome, setCognome] = useState("");
     const [mail, setMail] = useState("");
     const [messaggio, setMessaggio] = useState("");
-    const avviso = { nome, cognome, mail, messaggio };
-
-    const addAvviso = (e) => {
+    const form = useRef();
+    
+    const sendEmail = (e) => {
         if (nome, cognome, mail, messaggio !== "") {
             e.preventDefault();
-            console.log(avviso);
-            client.addMail(avviso).then((res) => console.log("RES", res));
+
+            emailjs.sendForm(`${process.env.REACT_APP_MAIL_SERVICE_ID}`, 
+            `${process.env.REACT_APP_MAIL_TEMPLATE_ID}`, e.target, 
+            `${process.env.REACT_APP_MAIL_PUBLIC_KEY}`)
+                .then((result) => {
+                    alert("Messaggio inviato, ti risponderemo il prima possibile.", result.text);
+                },
+                    (error) => {
+                        alert("An error occurred, Please try again", error.text);
+                    });
         } else {
             console.log("campo vuoto");
         }
@@ -27,7 +35,7 @@ function BodyJoin() {
                 <h3>Completa questo form e risponderemo alle tue domande</h3>
             </div>
             <div className="cont_form">
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                     <div className="row1 my-20">
                         <input type="text" name="name" placeholder="Nome" className="row1_content" onChange={(e) => setNome(e.target.value)} required />
                         <input type="text" name="surname" placeholder="Cognome" className="row1_content" onChange={(e) => setCognome(e.target.value)} required />
@@ -40,7 +48,7 @@ function BodyJoin() {
                         <textarea name="messaggio" placeholder="Inserisci il tuo messaggio qui" rows={10} className="row2_content" onChange={(e) => setMessaggio(e.target.value)} required />
                     </div>
                     <div className="row3 my-20">
-                        <input type="submit" value="Invia" className="form_btn" onClick={addAvviso} />
+                        <input type="submit" value="Invia" className="form_btn" />
                     </div>
                 </form>
             </div>
