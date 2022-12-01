@@ -2,8 +2,6 @@ import React from "react";
 import './modalStyle.scss';
 
 function Modal(props) {
-  console.log("MODAL", props)
-
   return (
     <div className="modalContainer">
       <div className="modal">

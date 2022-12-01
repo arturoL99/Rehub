@@ -1,6 +1,7 @@
 import "./footerStyle.scss";
 import logo from "../../images/logo.webp";
 import Navbar from "../navbar/navbar";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -17,7 +18,8 @@ export default function Footer() {
                         Tel.348 4414871 - P.IVA 11191330965 - N.REA MI2585603</small>
                     <small className="my-5">PEC: re-hub@pec.it</small>
                     <small className="my-5">Tutto il contenuto di questo sito è Copyright © RE-Hub Srl -
-                        <a>Privacy Policy</a> - <a>Cookie Policy</a></small>
+                        <NavLink to={"/privacy"}>Privacy Policy</NavLink>
+                        - <NavLink to={"/cookies"}>Cookie Policy</NavLink></small>
                 </div>
             </div>
         </footer>
