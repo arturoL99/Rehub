@@ -60,11 +60,18 @@
   &_arrow_left{
     position: absolute;
     left: 0;
+    transform: rotate(-90deg);
   }
 
   &_arrow_right{
     position: absolute;
     right: 0;
+    transform: rotate(90deg);
+  }
+
+  &_arrow {
+    width: 50px;
+    height: auto;
   }
 
   &_arrow:hover {

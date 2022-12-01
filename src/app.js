@@ -10,6 +10,8 @@ import'./style/utilities.scss';
 import Test from "./pages/testPage";
 import Proprietà from "./pages/proprietà";
 import ProprietàSingola from "./pages/proprietàSingola";
+import Privacy from "./pages/privacy";
+import Cookies from "./pages/cookies";
 
 function App() {
     return (
@@ -23,7 +25,8 @@ function App() {
                 <Route exact path="/news" element={<Blog />}/>
                 <Route exact path="/proprieta" element={<Proprietà />}/>
                 <Route exact path={"/proprieta/:id"} element={<ProprietàSingola />}/>
-                <Route exact path="/test" element={<Test />}/>
+                <Route exact path="/privacy" element={<Privacy />}/>
+                <Route exact path="/cookies" element={<Cookies />}/>
             </Routes>
         </>
     )
