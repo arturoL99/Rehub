@@ -80,6 +80,11 @@
       height: 60vh;
   }
 
+  &-text{
+    position: absolute;
+    width: 100%;
+  }
+
   &-content {
     color: white;
     margin: 0;
@@ -113,6 +118,8 @@
   height: 100%;
   width: 100%;
   z-index: -1;
+  background-position: center;
+  background-size: cover;
 }
 
 .link_annuncio{
