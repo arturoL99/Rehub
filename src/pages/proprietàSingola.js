@@ -10,7 +10,10 @@ function ProprietàSingola() {
     const [proprieta, setProprieta] = useState();
 
     useEffect(() => {
-        contentfulClient.getEntry(id).then((res) => setProprieta(res.fields));
+        contentfulClient.getEntry(id).then((res) => {
+            setProprieta(res.fields);
+            console.log(res);
+        });
     }, []);
 
     if (!proprieta) return <Loading />

@@ -1,5 +1,6 @@
 import React from "react";
 import './modalStyle.scss';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 function Modal(props) {
   return (
@@ -11,7 +12,7 @@ function Modal(props) {
         </div>
 
         <div className="modalContent">
-          <p>{props.art.testo.content[0].content[0].value}</p>
+          <p>{documentToReactComponents(props.art.testo)}</p>
         </div>
       </div>
     </div>
