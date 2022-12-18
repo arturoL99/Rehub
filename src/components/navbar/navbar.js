@@ -6,9 +6,7 @@ import { useLockScroll } from '../../utils/useLockScroll';
 import './navStyle.scss';
 
 export default function Navbar() {
-
     const [isOpen, setOpen] = useState(false);
-    const [drop, setDrop] = useState(false);
     const { lockScroll, unlockScroll } = useLockScroll();
 
     const handleOpen = () => {
@@ -50,18 +48,6 @@ export default function Navbar() {
                 <NavLink className="mx-15 hideDesktop" to={"/servizi/utilizzatori"}>Utilizzatori</NavLink>
                 <NavLink className="mx-15 hideDesktop" to={"/servizi/proprietari"}>Propietari</NavLink>
                 <NavLink className="mx-15 hideDesktop" to={"/servizi/investitori"}>Investirori</NavLink>
-                {/* <div className="dropdown-container" onMouseEnter={() => setDrop(true)}
-                    onMouseLeave={() => setDrop(false)}>
-                    <a id="servizi" className="mx-15 hideMobile">Servizi</a>
-                    <div className={drop ? 'dropdown_content' : "hideDesktop"}>
-                        <NavLink to={"/servizi/utilizzatori"} className="mx-15" onClick={handleClose}>
-                            Utilizzatori</NavLink>
-                        <NavLink to={"/servizi/proprietari"} className="mx-15" onClick={handleClose}>
-                            Proprietari</NavLink>
-                        <NavLink to={"/servizi/investitori"} className="mx-15" onClick={handleClose}>
-                            Investitori</NavLink>
-                    </div>
-                </div> */}
                 <NavLink to={"/proprieta"} className="mx-15" onClick={handleClose}>
                     Cerca una proprietà</NavLink>
                 <NavLink to={"/news"} className="mx-15" onClick={handleClose}>News</NavLink>

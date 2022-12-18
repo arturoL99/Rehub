@@ -3,7 +3,6 @@ import './artStyle.scss';
 import Modal from '../modal/modal';
 
 export default function Article(prop) {
-
     const [modal, setModal] = useState(false);
     const art = prop.prop.fields;
     return (
@@ -19,10 +18,3 @@ export default function Article(prop) {
         </article>
     )
 }
-
-
-
-
-
-
-
