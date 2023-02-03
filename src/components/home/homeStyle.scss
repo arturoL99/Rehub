@@ -102,3 +102,31 @@
     filter: blur(0px);
   }
 }
+
+.videoSlider{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe{
+  width: 50vw;
+  height: 56vh;
+}
+
+.video{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+
+  &Link{
+    position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(150%, -50%);
+  }
+}
