@@ -13,6 +13,8 @@ export default function Contact() {
             <div className="contact-card">
                 <img src={email} className="contact-icon" alt="email us" />
                 <p>Scrivici:</p>
+                <a href="mailto:direzione@re-hub.it" className="blue">
+                    direzione@re-hub.it</a>
                 <a href="mailto:alessandro.barra@re-hub-it" className="blue">
                     alessandro.barra@re-hub-it</a>  
             </div>

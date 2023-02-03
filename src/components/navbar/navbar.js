@@ -25,8 +25,9 @@ export default function Navbar() {
         <section className='navbar'>
             <div className="container">
                 <div className='logoContainer'>
-                    <img src={logo} alt="logo re-hub" className="logo" />
-                    {/* <p className="mx-15 logo-title py-10">RE-Hub <br />Real Estate Hub <br />Advisory & Agency</p> */}
+                    <NavLink to={"/"} id="link_logo" >
+                        <img src={logo} alt="logo re-hub" className="logo" />
+                    </NavLink>
                 </div>
                 <div className='menu'>
                     <img src={isOpen ? x : "https://img.icons8.com/ios/50/000000/menu--v1.png"}
@@ -41,17 +42,21 @@ export default function Navbar() {
                     <button className="dropbtn hideMobile">Servizi</button>
                     <div className="dropdown-content">
                         <NavLink to={"/servizi/utilizzatori"}>Utilizzatori</NavLink>
-                        <NavLink to={"/servizi/proprietari"}>Propietari</NavLink>
-                        <NavLink to={"/servizi/investitori"}>Investirori</NavLink>
+                        <NavLink to={"/servizi/proprietari"}>Proprietari</NavLink>
+                        <NavLink to={"/servizi/investitori"}>Investitori</NavLink>
                     </div>
                 </div>
                 <NavLink className="mx-15 hideDesktop" to={"/servizi/utilizzatori"}>Utilizzatori</NavLink>
-                <NavLink className="mx-15 hideDesktop" to={"/servizi/proprietari"}>Propietari</NavLink>
-                <NavLink className="mx-15 hideDesktop" to={"/servizi/investitori"}>Investirori</NavLink>
+                <NavLink className="mx-15 hideDesktop" to={"/servizi/proprietari"}>Proprietari</NavLink>
+                <NavLink className="mx-15 hideDesktop" to={"/servizi/investitori"}>Investitori</NavLink>
                 <NavLink to={"/proprieta"} className="mx-15" onClick={handleClose}>
                     Cerca una proprietà</NavLink>
                 <NavLink to={"/news"} className="mx-15" onClick={handleClose}>News</NavLink>
                 <NavLink to={"/contatti"} className="mx-15" onClick={handleClose}>Contatti</NavLink>
+                {/* <select>
+                    <option value="it">IT</option>
+                    <option value="en">ENG</option>
+                </select> */}
             </div>
         </section>
     )
