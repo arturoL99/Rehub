@@ -95,7 +95,6 @@ a:hover {
 }
 
 .img_fluid {
-    /*DA MODIFICARE, Specificare max-width nei singoli elementi + modificarla con media*/
     width: 100%;
     max-width: 700px;
     height: auto;
@@ -136,4 +135,8 @@ a:hover {
     @media (max-width: 500px) {
       width: 250px;
     }
+  }
+
+  .pointer:hover{
+    cursor: pointer;
   }
