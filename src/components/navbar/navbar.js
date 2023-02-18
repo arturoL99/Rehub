@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../images/logo.webp';
 import x from "../../images/x-full.svg";
+import Context from '../../contextProvider';
 import { useLockScroll } from '../../utils/useLockScroll';
 import './navStyle.scss';
 
 export default function Navbar() {
     const [isOpen, setOpen] = useState(false);
     const { lockScroll, unlockScroll } = useLockScroll();
+    const { setLanguage } = useContext(Context);
 
     const handleOpen = () => {
         setOpen(!isOpen);
@@ -53,10 +55,10 @@ export default function Navbar() {
                     Cerca una proprietà</NavLink>
                 <NavLink to={"/news"} className="mx-15" onClick={handleClose}>News</NavLink>
                 <NavLink to={"/contatti"} className="mx-15" onClick={handleClose}>Contatti</NavLink>
-                {/* <select>
-                    <option value="it">IT</option>
-                    <option value="en">ENG</option>
-                </select> */}
+                <select>
+                    <option value="it" onClick={() => setLanguage("it")}>IT</option>
+                    <option value="en" onClick={() => setLanguage("en")}>ENG</option>
+                </select>
             </div>
         </section>
     )

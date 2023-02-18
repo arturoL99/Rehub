@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import Context from "../../contextProvider";
 import arrow from "../../images/icons8-freccia.webp";
 import './homeStyle.scss';
 
 export default function VideoSlider() {
-
+    const { language } = useContext(Context);
+    console.log(language);
     const switchVideo = () => {
         var videos = document.getElementsByClassName("video");
         for (let video of videos) {
@@ -27,10 +29,17 @@ export default function VideoSlider() {
                 <img src={arrow} onClick={switchVideo} className="slider_arrow" />
 
             </div>
-            <div className="videoLink">
-                <h2>Le nostre proprietà</h2>
-                <Link to={"/proprieta"} className="hero_btn">Esplora</Link>
-            </div>
+            {
+                language === "it" ? 
+                <div className="videoLink">
+                    <h2>Le nostre proprietà</h2>
+                    <Link to={"/proprieta"} className="hero_btn">Esplora</Link>
+                </div> : 
+                <div className="videoLink">
+                    <h2>Our properties</h2>
+                    <Link to={"/proprieta"} className="hero_btn">See more</Link>
+                </div>
+            }
         </section>
     )
 }
