@@ -12,7 +12,6 @@ function ProprietàSingola() {
     useEffect(() => {
         contentfulClient.getEntry(id).then((res) => {
             setProprieta(res.fields);
-            console.log(res);
         });
     }, []);
 

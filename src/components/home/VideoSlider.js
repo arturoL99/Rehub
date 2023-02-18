@@ -33,11 +33,11 @@ export default function VideoSlider() {
                 language === "it" ? 
                 <div className="videoLink">
                     <h2>Le nostre proprietà</h2>
-                    <Link to={"/proprieta"} className="hero_btn">Esplora</Link>
+                    <Link to={"/proprieta"} className="form_btn">Esplora</Link>
                 </div> : 
                 <div className="videoLink">
                     <h2>Our properties</h2>
-                    <Link to={"/proprieta"} className="hero_btn">See more</Link>
+                    <Link to={"/proprieta"} className="form_btn">See more</Link>
                 </div>
             }
         </section>
