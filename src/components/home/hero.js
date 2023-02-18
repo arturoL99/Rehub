@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { bgImg, bgImgMobile } from "../../utils/ImageUtils";
+import Context from "../../contextProvider";
 import './homeStyle.scss';
 
 export default function Hero() {
     const [counter, setCounter] = useState(0);
     const [imgArray, setImgArray] = useState([]);
     const [foto, setFoto] = useState();
+    const { language } = useContext(Context);
 
     const avanti = () => {
         setCounter(counter + 1);
@@ -43,15 +45,25 @@ export default function Hero() {
     return (
         <section className="hero">
             <div style={imgStyles} className="hero_slide"></div>
-            {/* <img src={foto} className="heroBg" alt="background" /> */}
-            <div className="hero_text">
-                <h2 className="text-shadow">Tutti i servizi immobiliari dedicati a:</h2>
-                <div className="btns">
-                    <Link to={"/servizi/utilizzatori"} className="hero_btn">Utilizzatori</Link>
-                    <Link to={"/servizi/proprietari"} className="hero_btn">Proprietari</Link>
-                    <Link to={"/servizi/investitori"} className="hero_btn">Investitori</Link>
-                </div>
-            </div>
+            {
+                language === "it" ?
+                    <div className="hero_text">
+                        <h2 className="text-shadow">Tutti i servizi immobiliari dedicati a:</h2>
+                        <div className="btns">
+                            <Link to={"/servizi/utilizzatori"} className="hero_btn">Utilizzatori</Link>
+                            <Link to={"/servizi/proprietari"} className="hero_btn">Proprietari</Link>
+                            <Link to={"/servizi/investitori"} className="hero_btn">Investitori</Link>
+                        </div>
+                    </div> :
+                    <div className="hero_text">
+                        <h2 className="text-shadow">All real estate services for:</h2>
+                        <div className="btns">
+                            <Link to={"/servizi/utilizzatori"} className="hero_btn">Users</Link>
+                            <Link to={"/servizi/proprietari"} className="hero_btn">Owners</Link>
+                            <Link to={"/servizi/investitori"} className="hero_btn">Investors</Link>
+                        </div>
+                    </div>
+            }
         </section>
     )
 }
