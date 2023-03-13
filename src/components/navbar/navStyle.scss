@@ -12,10 +12,12 @@
   .container {
     display: flex;
     z-index: 100;
+
     .logo-title {
       font-weight: 700;
       font-size: 18px;
     }
+
     .logoContainer {
       display: flex;
       justify-content: center;
@@ -43,18 +45,20 @@
     .nav_open {
       display: flex;
       flex-direction: column;
-      height: 90vh;
+      height: 100vh;
       width: 100vw;
       font-size: 20px;
       font-weight: 550;
       margin: 15px 0;
+      padding: 15vh 0 0 0;
       position: absolute;
-      top: 60px;
+      top: 0vh;
       z-index: 10;
       background-color: #f6f6f6;
       transition: all 1s;
 
-      a {
+      a,
+      p {
         margin: 0 25px;
       }
     }
@@ -72,6 +76,7 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+
       .logoContainer {
         display: flex;
       }
@@ -80,6 +85,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         img {
           height: 35px;
           width: 35px;
@@ -87,6 +93,7 @@
       }
     }
   }
+
   a {
     @media (max-width: 950px) {
       border-bottom: 1px solid #888888;
@@ -117,8 +124,11 @@
 
 a {
   padding: 5px;
+}
 
-  @media (max-width: 950px) {
+@media (max-width: 950px) {
+  a,
+  p {
     padding: 20px 5px;
   }
 }
@@ -169,11 +179,11 @@ a {
   color: white;
 }
 
-select{
+select {
   border: none;
   background-color: transparent;
 }
 
-#link_logo{
+#link_logo {
   background-color: transparent;
 }
