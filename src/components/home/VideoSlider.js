@@ -25,8 +25,8 @@ export default function VideoSlider() {
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/k8K9zR0EA-M?controls=0;autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="video hiddenVideo" />
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/JXhhTUbXlfc?controls=0;autoplay=1&mute=1" title="LesaVillaTadini" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="video" />
             </div>
-            <div className="video_arrow">
-                <img src={arrow} onClick={switchVideo} className="slider_arrow" />
+            <div className="video_arrow_cont">
+                <img src={arrow} onClick={switchVideo} className="video_arrow" />
 
             </div>
             {
