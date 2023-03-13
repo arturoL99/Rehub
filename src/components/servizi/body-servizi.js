@@ -1,6 +1,6 @@
 import React from "react";
 import './servStyle.scss';
-
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 function BodyServizi(props) {
     const servizio = props.servizi;
@@ -11,8 +11,7 @@ function BodyServizi(props) {
                 <div className="card_servizi">
                     <h2 className="px-15">{servizio.titolo}</h2>
                     <h3 className="px-15">{servizio.sottotitolo}</h3>
-                    <p className="px-15">{servizio.contenuto.content[0].content[0].value}</p>
-                    <p className="px-15">{servizio.contenuto.content[1].content[0].value}</p>
+                    <p className="px-15">{documentToReactComponents(servizio.contenuto)}</p>
                 </div>
                 <div>
                     <img src={props.img[0]} alt="lavoratori felici" className="img_fluid" />

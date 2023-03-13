@@ -56,9 +56,9 @@ export default function Navbar() {
                                     <NavLink to={"/servizi/investitori"}>Investitori</NavLink>
                                 </div>
                             </div>
-                            <NavLink className="mx-15 hideDesktop" to={"/servizi/utilizzatori"}>Utilizzatori</NavLink>
-                            <NavLink className="mx-15 hideDesktop" to={"/servizi/proprietari"}>Proprietari</NavLink>
-                            <NavLink className="mx-15 hideDesktop" to={"/servizi/investitori"}>Investitori</NavLink>
+                            <NavLink className="mx-15 hideDesktop" to={"/servizi/utilizzatori"} onClick={handleClose}>Utilizzatori</NavLink>
+                            <NavLink className="mx-15 hideDesktop" to={"/servizi/proprietari"} onClick={handleClose}>Proprietari</NavLink>
+                            <NavLink className="mx-15 hideDesktop" to={"/servizi/investitori"} onClick={handleClose}>Investitori</NavLink>
                             <NavLink to={"/proprieta"} className="mx-15" onClick={handleClose}>Cerca una proprietà</NavLink>
                             <NavLink to={"/news"} className="mx-15" onClick={handleClose}>News</NavLink>
                             <NavLink to={"/contatti"} className="mx-15" onClick={handleClose}>Contatti</NavLink>
@@ -76,9 +76,9 @@ export default function Navbar() {
                                     <NavLink to={"/servizi/investitori"}>Investors</NavLink>
                                 </div>
                             </div>
-                            <NavLink className="mx-15 hideDesktop" to={"/servizi/utilizzatori"}>Users</NavLink>
-                            <NavLink className="mx-15 hideDesktop" to={"/servizi/proprietari"}>Owners</NavLink>
-                            <NavLink className="mx-15 hideDesktop" to={"/servizi/investitori"}>Investors</NavLink>
+                            <NavLink className="mx-15 hideDesktop" to={"/servizi/utilizzatori"} onClick={handleClose}>Users</NavLink>
+                            <NavLink className="mx-15 hideDesktop" to={"/servizi/proprietari"} onClick={handleClose}>Owners</NavLink>
+                            <NavLink className="mx-15 hideDesktop" to={"/servizi/investitori"} onClick={handleClose}>Investors</NavLink>
                             <NavLink to={"/proprieta"} className="mx-15" onClick={handleClose}>
                                 Properties</NavLink>
                             <NavLink to={"/news"} className="mx-15" onClick={handleClose}>News</NavLink>
@@ -86,10 +86,6 @@ export default function Navbar() {
                         </>
                 }
                 <p className="mx-15 pointer" onClick={() => changeLanguage(language)}>{language}</p>
-                {/* <select>
-                    <option value="it" onClick={() => setLanguage("it")}>IT</option>
-                    <option value="en" onClick={() => setLanguage("en")}>ENG</option>
-                </select> */}
             </div>
         </section>
     )
