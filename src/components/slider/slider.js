@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Loading from "../loading/loading";
 import "./slider.scss";
 import arrow from "../../images/icons8-freccia.webp";
+import spinner from "../../images/spinner.svg";
 
 export default function Slider(props) {
     const [immagini, setImmagini] = useState(props.immagini);
@@ -29,13 +30,12 @@ export default function Slider(props) {
             </div>
             <div style={imgStyles} className="slide"
                 onClick={() => setOpen(!open)}></div>
-            {/* <img src={immagini[counter].fields.file.url}
-                className={open ? "slider_img_open" : "slider_img"} onClick={() => setOpen(!open)} /> */}
             <div className="slider_arrow_right">
                 <img src={arrow} onClick={avanti} className="slider_arrow" />
 
             </div>
             <p className={open ? "slider_counter_open" : "slider_counter"}>{counter + 1}/{immagini.length}</p>
+            <img src={spinner}  className="slider_spinner" />
         </div>
     )
 }
