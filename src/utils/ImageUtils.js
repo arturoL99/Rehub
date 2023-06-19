@@ -1,6 +1,6 @@
 import bgImg1 from "../images/bgImg1.webp";
 import bgImg2 from "../images/bgImg2.webp";
-import bgImg3 from "../images/bgImg3.webp";
+
 import bgImg4 from "../images/bgImg4.webp";
 import bgImg5 from "../images/bgImg5.webp";
 import bgImgMob1 from "../images/bgImgMob1.webp";
@@ -14,7 +14,7 @@ import proprietari2 from "../images/proprietari2.webp";
 import investitori2 from "../images/investitori1.webp";
 import investitori1 from "../images/investitori2.webp";
 
-export const bgImg = [bgImg1, bgImg2, bgImg3, bgImg4, bgImg5];
+export const bgImg = [bgImg1, bgImg2, bgImg4, bgImg5];
 
 export const bgImgMobile = [bgImgMob1, bgImgMob2, bgImgMob3, bgImgMob4];
 

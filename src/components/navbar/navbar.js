@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../images/logo.webp';
+import ita from '../../images/icons8-italy-48.png';
+import eng from '../../images/icons8-english-48.png';
 import x from "../../images/x-full.svg";
 import Context from '../../contextProvider';
 import { useLockScroll } from '../../utils/useLockScroll';
@@ -21,8 +23,8 @@ export default function Navbar() {
 
     const changeLanguage = (lang) => {
         lang === "it" ?
-        setLanguage("eng") :
-        setLanguage("it")
+            setLanguage("eng") :
+            setLanguage("it")
     }
 
     useEffect(() => {
@@ -85,7 +87,10 @@ export default function Navbar() {
                             <NavLink to={"/contatti"} className="mx-15" onClick={handleClose}>Contacts</NavLink>
                         </>
                 }
-                <p className="mx-15 pointer" onClick={() => changeLanguage(language)}>{language}</p>
+                <p className="mx-15 pointer" onClick={() => changeLanguage(language)}>{language === "it" ?
+                    <img src={ita} alt="italiano" className="icon" /> :
+                    <img src={eng} alt="english" className="icon" />}
+                </p>
             </div>
         </section>
     )
