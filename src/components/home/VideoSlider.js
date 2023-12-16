@@ -3,22 +3,11 @@ import { Link } from "react-router-dom";
 import Context from "../../contextProvider";
 import arrow from "../../images/icons8-freccia.webp";
 import './homeStyle.scss';
+import { switchVideo } from "../../utils/SliderUtils";
 
 export default function VideoSlider() {
     const { language } = useContext(Context);
     const [link, setLink] = useState(true);
-    const switchVideo = () => {
-        var videos = document.getElementsByClassName("video");
-        for (let video of videos) {
-            if (video.className === `video hiddenVideo`) {
-                video.classList.remove(`hiddenVideo`);
-            }
-            else if (video.className === `video`) {
-                video.classList.add(`hiddenVideo`);
-            }
-        };
-        setLink(!link);
-    }
 
     return (
         <section className="videoSlider">
@@ -27,7 +16,7 @@ export default function VideoSlider() {
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Lb-iYQZMFo0?controls=0;autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="video" />
             </div>
             <div className="video_arrow_cont">
-                <img src={arrow} onClick={switchVideo} className="video_arrow" />
+                <img src={arrow} onClick={() => switchVideo(link, setLink)} className="video_arrow" />
 
             </div>
             {

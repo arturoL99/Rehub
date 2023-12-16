@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <footer>
             <div className="logo-container">
-                <img src={logo} alt="logo" className="logo" />
+                <img src={logo} alt="logo" className="logo" loading="lazy" />
             </div>
             <div className="footer">
                 <div className="footer-nav">

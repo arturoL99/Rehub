@@ -1,6 +1,5 @@
 import bgImg1 from "../images/bgImg1.webp";
 import bgImg2 from "../images/bgImg2.webp";
-
 import bgImg4 from "../images/bgImg4.webp";
 import bgImg5 from "../images/bgImg5.webp";
 import bgImgMob1 from "../images/bgImgMob1.webp";

@@ -11,7 +11,7 @@ export default function Article(prop) {
         <article className="content__card my-10">
             <h2>{art.titolo}</h2>
             <div id="art-img" className="my-10">
-                <img src={art.immagine.fields.file.url} alt="stock tech" />
+                <img src={art.immagine.fields.file.url} alt="stock tech" loading="lazy" />
             </div>
             <div>
                 {

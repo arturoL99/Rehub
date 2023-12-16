@@ -82,6 +82,10 @@ a:hover {
     margin: 20px 0px;
 }
 
+.mb-0{
+    margin-bottom: 0;
+}
+
 .proprieta_container{
     display: flex;
     justify-content: space-between;
@@ -139,4 +143,12 @@ a:hover {
 
   .pointer:hover{
     cursor: pointer;
+  }
+
+  .rotateRight{
+    transform: rotate(90deg);
+  }
+
+  .rotateLeft{
+    transform: rotate(-90deg);
   }

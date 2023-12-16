@@ -41,7 +41,7 @@ export default function Navbar() {
                 </div>
                 <div className='menu'>
                     <img src={isOpen ? x : "https://img.icons8.com/ios/50/000000/menu--v1.png"}
-                        alt='menu button' onClick={handleOpen} />
+                        alt='menu button' onClick={handleOpen} loading="lazy" />
                 </div>
             </div>
             <div className={isOpen ? "nav_open" : "nav"}>

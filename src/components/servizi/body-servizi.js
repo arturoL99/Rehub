@@ -14,7 +14,7 @@ function BodyServizi(props) {
                     <p className="px-15">{documentToReactComponents(servizio.contenuto)}</p>
                 </div>
                 <div>
-                    <img src={props.img[0]} alt="lavoratori felici" className="img_fluid" />
+                    <img src={props.img[0]} alt="lavoratori felici" className="img_fluid" loading="lazy" />
                 </div>
             </div>
 
@@ -26,7 +26,7 @@ function BodyServizi(props) {
                     </ul>
                 </div>
                 <div>
-                    <img src={props.img[1]} alt="collaborazione" className="img" />
+                    <img src={props.img[1]} alt="collaborazione" className="img" loading="lazy" />
                 </div>
             </div>
         </section>
