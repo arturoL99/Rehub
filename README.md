@@ -1,8 +1,10 @@
 # Rehub
 
-# Getting Started with Create React App
+This is a React project written using Javasript, and Scss for styling.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The site uses [Contentful](https://www.contentful.com/) as headless CMS to update the content.
+
+You can click [**here**](https://www.re-hub.it/) to visit a live deploy of the site.
 
 ## Available Scripts
 

@@ -1,0 +1,44 @@
+.evidence {
+    position: absolute;
+    width: 90%;
+    right: 50%;
+    transform: translate(50%, 0);
+    margin-top: 0;
+  
+    @media (max-width: 950px) {
+      width: 100%;
+    }
+  
+    &Container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      @media (max-width: 950px) {
+        height: 80vh;
+      }
+    }
+  
+    .bgImg {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .alagnaBg{
+      background-image: url("../../images/alagna3.webp");
+    }
+  
+    .verbanoBg{
+      background-image: url("../../images/verbanoBg.webp");
+    }
+  
+    .massinoBg{
+      background-image: url("../../images/massinoBg.webp");
+    }
+  }
