@@ -114,15 +114,15 @@ a:hover {
 }
 
 
-::-webkit-scrollbar {
-    width: 10px;
-}
+// ::-webkit-scrollbar {
+//     width: 10px;
+// }
 
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #28669f;
-}
+// ::-webkit-scrollbar-thumb {
+//     -webkit-border-radius: 10px;
+//     border-radius: 10px;
+//     background: #28669f;
+// }
 
 .centered{
     width: 95vw;
@@ -133,11 +133,11 @@ a:hover {
 }
 
 .logo {
-    height: auto;
-    width: 300px;
+    height: 100px;
+    width: auto;
 
     @media (max-width: 500px) {
-      width: 250px;
+        height: 85px;
     }
   }
 

@@ -15,7 +15,11 @@ export default function Dettagli(props) {
                         <p className="my-10">Indirizzo: <b>{props.proprieta.indirizzo}</b></p>
                         <p className="my-10">Superfice: <b>{props.proprieta.metriQuadri}</b></p>
                         <p className="my-10">Descrizione:{documentToReactComponents(props.proprieta.riassunto)}</p>
-                        <p className="my-10">Sei interessato? <b><NavLink to="/contatti">Contattaci!</NavLink></b></p>
+                        <p className="my-10">
+                            Sei interessato? <b><NavLink to="/contatti">Contattaci!</NavLink></b>|
+                            {props.proprieta.inEvidenza ? <b><a href={"https:" + props.proprieta.pdf.fields.file.url} target="/" className="">Scopri di più</a></b> : <></>}
+                        </p>
+
                     </div>
                     :
                     <div className="dettagli">
@@ -23,7 +27,10 @@ export default function Dettagli(props) {
                         <p className="my-10">Address: <b>{props.proprieta.indirizzo}</b></p>
                         <p className="my-10">Surface: <b>{props.proprieta.metriQuadri}</b></p>
                         <p className="my-10">Description:{documentToReactComponents(props.proprieta.riassunto)}</p>
-                        <p className="my-10">Are you interested? <b><NavLink to="/contatti">Contact Us!</NavLink></b></p>
+                        <p className="my-10">
+                            Are you interested? <b><NavLink to="/contatti">Contact Us!</NavLink></b>|
+                            {props.proprieta.inEvidenza ? <b><a href={"https:" + props.proprieta.pdf.fields.file.url} target="/" className="">View more</a></b> : <></>}
+                            </p>
                     </div>
             }
         </section>

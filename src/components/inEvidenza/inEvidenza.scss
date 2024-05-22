@@ -1,13 +1,9 @@
 .evidence {
     position: absolute;
-    width: 90%;
+    width: 100%;
     right: 50%;
     transform: translate(50%, 0);
     margin-top: 0;
-  
-    @media (max-width: 950px) {
-      width: 100%;
-    }
   
     &Container {
       position: relative;

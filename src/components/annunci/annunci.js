@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './annunciStyle.scss';
 import CardAnnuncio from "./cardAnnuncio";
 import { NavLink } from 'react-router-dom';
+import Loading from "../loading/loading.js";
 
 function Annunci(props) {
+    const [annunci, setAnnunci] = useState();
+    const sortAnnunci = () => {
+        const annunci = [];
+        props.annunci.map((annuncio =>
+            annuncio.fields.inEvidenza ? annunci.unshift(annuncio) : annunci.push(annuncio)
+        ))
+        return annunci;
+    }
+    useEffect(() => {
+        setAnnunci(sortAnnunci());
+    }, [])
+    if(!annunci) return <Loading />
     return (
         <section id="main-proprietà">
             <div className="container-annunci">
                 {/* <Ricerca /> */}
                 <div className="annunci">
                     {
-                        props.annunci.map((annuncio =>
+                        annunci.map((annuncio =>
                             <NavLink to={"/proprieta/" + annuncio.sys.id} className="link_annuncio">
                                 <CardAnnuncio annuncio={annuncio.fields} key={annuncio.sys.id} />
                             </NavLink>

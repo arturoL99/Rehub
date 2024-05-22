@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Loading from "../loading/loading";
 import "./slider.scss";
 import arrow from "../../images/icons8-freccia.webp";
@@ -8,6 +8,7 @@ export default function Slider(props) {
     const [immagini, setImmagini] = useState(props.immagini);
     const [counter, setCounter] = useState(0);
     const [open, setOpen] = useState(false);
+    const [showArrow, setShowArrow] = useState(true);
 
     const avanti = () => {
         if (counter < immagini.length - 1) setCounter(counter + 1);
@@ -22,15 +23,20 @@ export default function Slider(props) {
     const imgStyles = {
         backgroundImage: `url(${immagini[counter].fields.file.url})`
     };
+
+    useEffect(() => {
+        if(immagini.length === 1) setShowArrow(false);
+    },[])
+
     if (!immagini) return <Loading />;
     return (
         <div className={open ? "slider_container_open" : "slider_container"}>
-            <div className="slider_arrow_left">
+            <div className={showArrow ? "slider_arrow_left" : "hide"}>
                 <img src={arrow} onClick={indietro} className="slider_arrow" />
             </div>
             <div style={imgStyles} className="slide"
                 onClick={() => setOpen(!open)}></div>
-            <div className="slider_arrow_right">
+            <div className={showArrow ? "slider_arrow_right" : "hide"}>
                 <img src={arrow} onClick={avanti} className="slider_arrow" />
 
             </div>

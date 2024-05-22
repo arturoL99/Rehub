@@ -5,10 +5,11 @@ import VideoSlider from "../components/home/VideoSlider";
 import arrow from "../images/icons8-freccia.webp";
 import { previousBanner, nextBanner } from "../utils/SliderUtils.js";
 import InEvidenza from "../components/inEvidenza/inEvidenza.js";
+import Loading from "../components/loading/loading.js";
 
 function Home() {
     const [immobiliInEvidenza, setImmobiliInEvidenza] = useState();
-    const [active, setActive] = useState(2);
+    const [active, setActive] = useState(0);
     useEffect(() => {
         contentfulClient.getEntries({
             content_type: "alagna"
@@ -16,7 +17,7 @@ function Home() {
             .then((entry) => setImmobiliInEvidenza(entry.items))
             .catch(console.error);
     }, []);
-
+    if(!immobiliInEvidenza) return <Loading />
     return (
         <>
             <Hero />
