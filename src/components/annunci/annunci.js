@@ -6,6 +6,7 @@ import Loading from "../loading/loading.js";
 
 function Annunci(props) {
     const [annunci, setAnnunci] = useState();
+    //da spostare in utils
     const sortAnnunci = () => {
         const annunci = [];
         props.annunci.map((annuncio =>

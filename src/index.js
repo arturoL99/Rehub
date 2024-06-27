@@ -11,7 +11,7 @@ import { ContextProvider } from "./contextProvider";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <ContextProvider>
       <BrowserRouter>
         <Navbar />
@@ -19,7 +19,7 @@ root.render(
         <Footer />
       </BrowserRouter>
     </ContextProvider>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 reportWebVitals();

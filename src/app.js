@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import JoinUs from "./pages/joinUs";
@@ -7,14 +7,17 @@ import Investirori from "./pages/investitori";
 import Propietari from "./pages/proprietari";
 import Blog from './pages/blog'
 import './style/utilities.scss';
-import Proprietà from "./pages/proprietà";
-import ProprietàSingola from "./pages/proprietàSingola";
+import Proprietà from "./pages/proprietàPLP";
+import ProprietàSingola from "./pages/proprietàPDP";
 import Privacy from "./pages/privacy";
 import Cookies from "./pages/cookies";
+import { pushGA } from "./utils/GA4Utils";
+import DataLayerEventTracker from "./utils/DataLayerUtils";
 
 function App() {
     return (
-        <>
+        <main>
+            <DataLayerEventTracker />
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/servizi/utilizzatori" element={<Utilizzatori />} />
@@ -27,7 +30,7 @@ function App() {
                 <Route exact path="/privacy" element={<Privacy />} />
                 <Route exact path="/cookies" element={<Cookies />} />
             </Routes>
-        </>
+        </main>
     )
 }
 

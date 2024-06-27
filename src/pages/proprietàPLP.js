@@ -20,8 +20,6 @@ function Proprietà() {
             })
                 .then((entry) => setAnnunci(entry.items))
                 .catch(console.error)
-
-                console.log(annunci);
     }, [language]);
 
     if (!annunci) return <Loading />

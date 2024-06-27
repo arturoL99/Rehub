@@ -27,7 +27,7 @@ function Home() {
                 <InEvidenza immobile={immobiliInEvidenza ? immobiliInEvidenza[active].fields : ""} visible={true}/>
                 <img src={arrow} className="video_arrow rotateRight" onClick={() => nextBanner(active, setActive, immobiliInEvidenza.length)}/>
             </section>
-            <VideoSlider />
+            {/* <VideoSlider /> */}
         </>
     )
 }

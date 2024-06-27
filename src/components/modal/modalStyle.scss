@@ -55,9 +55,10 @@
 
         &Content{
             text-align: justify;
-            overflow: scroll;
+            overflow: auto;
+            min-height: 90%;
             height: fit-content;
-            width: 80%;
+            width: 90%;
             padding-right: 50px;
 
             @media(max-width: 950px){

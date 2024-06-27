@@ -8,8 +8,11 @@ export default function InEvidenza(props) {
     const { language } = useContext(Context);
     if (!props.immobile) return <Loading />
     return (
-        <section className={props.visible ? "hero evidence" :"hide"}>
-            <div className={`bgImg ${props.immobile.classeSfondo}`}></div>
+        <section className={props.visible ? "hero evidence" : "hide"}>
+            <div className={`bgImg`}
+                style={{
+                    backgroundImage: `url(${props.immobile.foto.fields.file.url})`
+                }}></div>
             {
                 language === "it" ?
                     <div className="hero_text">

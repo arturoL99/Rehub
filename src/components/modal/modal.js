@@ -13,6 +13,12 @@ function Modal(props) {
 
         <div className="modalContent">
           <p>{documentToReactComponents(props.art.testo)}</p>
+          {
+            props.art.pdf ? <div className="btns">
+              <a href={"https:" + props.art.pdf.fields.file.url} target="/" className="hero_btn">Scopri di più</a>
+            </div> : <></>
+          }
+
         </div>
       </div>
     </div>

@@ -32,7 +32,7 @@ export default function Navbar() {
     }, [isOpen])
 
     return (
-        <section className='navbar'>
+        <nav className='navbar'>
             <div className="container">
                 <div className='logoContainer'>
                     <NavLink to={"/"} id="link_logo" >
@@ -87,12 +87,12 @@ export default function Navbar() {
                             <NavLink to={"/contatti"} className="mx-15" onClick={handleClose}>Contacts</NavLink>
                         </>
                 }
-                <p className="mx-15 pointer" onClick={() => changeLanguage(language)}>{language === "it" ?
+                {/* <p className="mx-15 pointer" onClick={() => changeLanguage(language)}>{language === "it" ?
                     <img src={ita} alt="italiano" className="icon" /> :
                     <img src={eng} alt="english" className="icon" />}
-                </p>
+                </p> */}
             </div>
-        </section>
+        </nav>
     )
 
 }
