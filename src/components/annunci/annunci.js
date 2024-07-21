@@ -3,20 +3,15 @@ import './annunciStyle.scss';
 import CardAnnuncio from "./cardAnnuncio";
 import { NavLink } from 'react-router-dom';
 import Loading from "../loading/loading.js";
+import { sortAnnunci } from "../../utils/Utils.js";
 
 function Annunci(props) {
     const [annunci, setAnnunci] = useState();
-    //da spostare in utils
-    const sortAnnunci = () => {
-        const annunci = [];
-        props.annunci.map((annuncio =>
-            annuncio.fields.inEvidenza ? annunci.unshift(annuncio) : annunci.push(annuncio)
-        ))
-        return annunci;
-    }
+
     useEffect(() => {
-        setAnnunci(sortAnnunci());
+        setAnnunci(sortAnnunci(props.annunci));
     }, [])
+    
     if(!annunci) return <Loading />
     return (
         <section id="main-proprietà">

@@ -11,20 +11,20 @@ export default function InEvidenza(props) {
         <section className={props.visible ? "hero evidence" : "hide"}>
             <div className={`bgImg`}
                 style={{
-                    backgroundImage: `url(${props.immobile.foto.fields.file.url})`
+                    backgroundImage: `url(${props.immobile.fields.fotoHome.fields.file.url})`
                 }}></div>
             {
                 language === "it" ?
                     <div className="hero_text">
-                        <h2 className="text-shadow">{props.immobile.title}</h2>
+                        <h2 className="text-shadow">{props.immobile.fields.nome}</h2>
                         <div className="btns">
-                            <a href={"https:" + props.immobile.pdf.fields.file.url} target="/" className="hero_btn">{props.immobile.cta}</a>
+                            <a href={"/proprieta/" + props.immobile.sys.id} className="hero_btn">Scopri di più</a>
                         </div>
                     </div> :
                     <div className="hero_text">
-                        <h2 className="text-shadow">{props.immobile.titleEng}</h2>
+                        <h2 className="text-shadow">{props.immobile.fields.nome}</h2>
                         <div className="btns">
-                            <a href={"https:" + props.immobile.pdf.fields.file.url} target="/" className="hero_btn">{props.immobile.ctaEng}</a>
+                            <a href={"/proprieta/" + props.immobile.sys.id} className="hero_btn">Scopri di più</a>
                         </div>
                     </div>
             }

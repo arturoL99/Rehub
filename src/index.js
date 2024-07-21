@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'
 import './style/utilities.scss';
 import Navbar from './components/navbar/navbar';
-import Footer from './components/Footer/footer';
+import Footer from './components/footer/footer';
 import { ContextProvider } from "./contextProvider";
 
 
