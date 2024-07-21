@@ -11,7 +11,7 @@ function Annunci(props) {
     useEffect(() => {
         setAnnunci(sortAnnunci(props.annunci));
     }, [])
-    
+
     if(!annunci) return <Loading />
     return (
         <section id="main-proprietà">
@@ -28,9 +28,9 @@ function Annunci(props) {
                 </div>
             </div>
 
-            <div className="cont-mappa">
+            {/* <div className="cont-mappa">
                 <iframe src="https://www.google.com/maps/d/u/1/embed?mid=121KvL2raH5UsB8uqaLoB4JTtCtWw_XU&ehbc=2E312F" allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="mappa" />
-            </div>
+            </div> */}
         </section>
     )
 }
