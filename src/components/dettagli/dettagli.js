@@ -19,6 +19,15 @@ export default function Dettagli(props) {
                             Sei interessato? <b><NavLink to="/contatti">Contattaci!</NavLink></b>|
                             {props.proprieta.inEvidenza ? <b><a href={"https:" + props.proprieta.pdf.fields.file.url} target="/" className="">Scopri di più</a></b> : <></>}
                         </p>
+                        { props.proprieta.urlMappa ? <div className="map">
+                            <iframe src={props.proprieta.urlMappa} 
+                                frameborder="0"
+                                style={{ border: 0 }}
+                                allowfullscreen=""
+                                aria-hidden="false"
+                                tabindex="0"
+                                className="map" />
+                        </div> : <></>}
 
                     </div>
                     :
@@ -30,7 +39,7 @@ export default function Dettagli(props) {
                         <p className="my-10">
                             Are you interested? <b><NavLink to="/contatti">Contact Us!</NavLink></b>|
                             {props.proprieta.inEvidenza ? <b><a href={"https:" + props.proprieta.pdf.fields.file.url} target="/" className="">View more</a></b> : <></>}
-                            </p>
+                        </p>
                     </div>
             }
         </section>
