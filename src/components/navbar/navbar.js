@@ -61,7 +61,7 @@ export default function Navbar() {
                             <NavLink className="mx-15 hideDesktop" to={"/servizi/utilizzatori"} onClick={handleClose}>Utilizzatori</NavLink>
                             <NavLink className="mx-15 hideDesktop" to={"/servizi/proprietari"} onClick={handleClose}>Proprietari</NavLink>
                             <NavLink className="mx-15 hideDesktop" to={"/servizi/investitori"} onClick={handleClose}>Investitori</NavLink>
-                            <NavLink to={"/proprieta"} className="mx-15" onClick={handleClose}>Cerca una proprietà</NavLink>
+                            <NavLink to={"/proprieta"} className="mx-15" onClick={handleClose}>Cerca una proprietà</NavLink>                
                             <NavLink to={"/news"} className="mx-15" onClick={handleClose}>News</NavLink>
                             <NavLink to={"/contatti"} className="mx-15" onClick={handleClose}>Contatti</NavLink>
                         </>
