@@ -32,9 +32,9 @@ function Proprietà() {
         <div className="annunci_plp">
             <div className="annunci_subContainer">
                 <h1>Alcuni esempi di proposte RE-HUB:</h1>
-                <AnnunciTemplate tipoAnnuncio="value" annunci={annunci} title="Value Added - Costruire/Riqualificare" image={craneIcon} />
-                <AnnunciTemplate tipoAnnuncio="end" annunci={annunci} title="End User - Per Abitare" image={homeIcon} />
-                <AnnunciTemplate tipoAnnuncio="core" annunci={annunci} title="Core - Investimento a reddito" image={coinIcon} />
+                <AnnunciTemplate tipoAnnuncio="end" annunci={annunci} title="Utilizzatori - Corporate e Famiglie" image={homeIcon} />                
+                <AnnunciTemplate tipoAnnuncio="core" annunci={annunci} title="Investitori Core" image={coinIcon} />
+                <AnnunciTemplate tipoAnnuncio="value" annunci={annunci} title="Investitori Value Added" image={craneIcon} />
                 <h3>Contattaci per approfondire queste iniziative e per scoprire tutte le altre iniziative promosse da Re-Hub</h3>
             </div>
             {/* <Annunci annunci={annunci} /> */}

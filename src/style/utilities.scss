@@ -154,7 +154,8 @@ a:hover {
   }
 
   .annunci_plp{
-    height: 85vh;
+    min-height: 85vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;

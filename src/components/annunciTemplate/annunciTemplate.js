@@ -9,7 +9,6 @@ export default function AnnunciTemplate(prop) {
     useEffect(() => {
         setFilteredAnnunci(prop.annunci.filter(item => item.fields.tipoAnnuncio === prop.tipoAnnuncio))
     }, []);
-    console.log('filtrati', filteredAnnunci);
     if (!filteredAnnunci) return <Loading />
     return (
         <div className="annunci_container">
