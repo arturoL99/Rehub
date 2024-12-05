@@ -4,6 +4,7 @@ import contentfulClient from "../client/client";
 import Dettagli from "../components/dettagli/dettagli";
 import Loading from "../components/loading/loading";
 import Slider from "../components/slider/slider";
+import Map from "../components/map/map";
 
 function ProprietàSingola() {
     const { id } = useParams();
@@ -20,7 +21,10 @@ function ProprietàSingola() {
         <>
             <h2 className="my-20">{proprieta.nome}</h2>
             <section className="proprieta_container">
-                <Slider immagini={proprieta.media} />
+                <div className="proprieta_left">
+                    <Slider immagini={proprieta.media} />
+                    <Map proprieta={proprieta} />
+                </div>
                 <Dettagli proprieta={proprieta} />
             </section>
         </>

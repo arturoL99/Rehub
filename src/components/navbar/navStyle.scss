@@ -98,6 +98,13 @@
       border-bottom: 1px solid #888888;
     }
   }
+
+  @media (max-width: 950px) {
+    a,
+    p {
+      padding: 20px 5px;
+    }
+  }
 }
 
 .hideDesktop {
@@ -123,13 +130,6 @@
 
 a {
   padding: 5px;
-}
-
-@media (max-width: 950px) {
-  a,
-  p {
-    padding: 20px 5px;
-  }
 }
 
 .dropbtn {
@@ -187,7 +187,7 @@ select {
   background-color: transparent;
 }
 
-.icon{
+.icon {
   width: 40px;
   height: auto;
 }
