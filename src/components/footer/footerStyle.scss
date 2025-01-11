@@ -36,9 +36,22 @@ footer {
 .footer-content {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   a {
     color: #28669f;
     text-decoration: underline;
+  }
+}
+
+.footerLogo{
+  height: 40px;
+  width: auto;
+
+  &_container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0;
   }
 }

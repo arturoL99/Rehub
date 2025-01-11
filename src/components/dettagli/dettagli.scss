@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 0 50px;
 
-  @media(max-width: 950px){
+  @media(max-width: 950px) {
     padding: 0;
   }
 
@@ -11,18 +11,27 @@
     width: 50%;
     height: fit-content;
 
-    @media(max-width: 950px){
+    @media(max-width: 950px) {
       width: 100%;
     }
   }
 
-  &_cta{
+  &_cta {
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 950px) {
+      flex-direction: column;
+    }
+  }
+
+  &_link {
     display: flex;
     align-items: center;
   }
 }
 
-.pdf_link{
+.pdf_link {
   display: flex;
   width: fit-content;
   align-items: center;

@@ -4,11 +4,12 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import "./dettagli.scss";
 import Context from "../../contextProvider";
 import Loading from "../loading/loading.js";
-import pdf from "../../images/icons8-pdf-60.png"
+import pdf from "../../images/icons8-pdf-60.png";
+import linkedin from "../../images/icons8-linkedin.svg";
 
 export default function Dettagli(props) {
     const { language } = useContext(Context);
-    if(!props.proprieta) return <Loading />
+    if (!props.proprieta) return <Loading />
     return (
         <section className="dettagli_container">
             {
@@ -19,13 +20,20 @@ export default function Dettagli(props) {
                         <p className="my-10">Superfice: <b>{props.proprieta.metriQuadri}</b></p>
                         <p className="my-10">Descrizione:{documentToReactComponents(props.proprieta.riassunto)}</p>
                         <p className="my-10 dettagli_cta">
-                            Sei interessato? <b><NavLink to="/contatti">Contattaci!</NavLink></b>
-                            {
-                            props.proprieta.inEvidenza && props.proprieta.pdf ? 
-                            <b className="pdf_link"> |<a href={"https:" + props.proprieta.pdf.fields.file.url} target="/" className="pdf_link">
-                                 Scarica <img src={pdf} alt="pdf" className="icon" />
-                            </a></b> 
-                            : <></>}
+                            Sei interessato?
+                            <span className="dettagli_link">
+                                <b><NavLink to="/contatti">Contattaci!</NavLink></b>
+                                {
+                                    props.proprieta.inEvidenza && props.proprieta.pdf ?
+                                        <b className="pdf_link"> |<a href={"https:" + props.proprieta.pdf.fields.file.url} target="/" className="pdf_link">
+                                            Scarica <img src={pdf} alt="pdf" className="icon" />
+                                        </a> |
+                                            <a href="https://it.linkedin.com/company/re-hubsrl" target="blank" className="flex">
+                                                <img src={linkedin} alt="linkedin" className="footerLogo" />
+                                            </a>
+                                        </b>
+                                        : <></>}
+                            </span>
                         </p>
                     </div>
                     :
